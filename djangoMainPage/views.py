@@ -1,0 +1,20 @@
+from django.urls import reverse
+
+from django.contrib.auth import authenticate, login, logout
+from django.http import HttpRequest
+from django.shortcuts import render, redirect
+
+
+def home(request: HttpRequest):
+    if request.method == "GET":
+        return render(request=request, template_name="main/main.html", context={'user':request.user})
+
+    username = request.POST["username"]
+    password = request.POST["password"]
+
+    user = authenticate(request, username=username, password=password)
+    if user is not None:
+        login(request, user)
+        return redirect("/lecture/")
+
+    return render(request=request, template_name="main/main.html", context={"error": "Invalid Credentials", 'user':request.user})

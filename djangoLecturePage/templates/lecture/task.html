@@ -1,0 +1,50 @@
+{% extends "main/index.html" %}
+{% load static %}
+
+{% block title %}
+    {{ lecture.lecture }}
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "lecture/task.css" %}">
+{% endblock %}
+
+{% block profile %}
+    {% if user.is_authenticated %}
+        <a href="#" id="myBtn-2"><li>Жеке кабинет</li></a>
+    {% else %}
+        <a href="#" id="myBtn"><li>Кіру/Тіркелу</li></a>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+<section class="container">
+    <div class="section__left">
+        <ol>
+            <a href="#"><li>ЕНГІЗУ - ШЫҒАРУ</li></a>
+            <a href="#"><li>Бүтін сандар</li></a>
+            <a href="#"><li>Бөлшек сандар</li></a>
+            <a href="#"><li>Қатарлар ( мәтіндік тип )</li></a>
+            <a href="#"><li>Массивтер (Тізімдер)</li></a>
+            <a href="#"><li>Кортеждер</li></a>
+            <a href="#"><li>Сөздіктер</li></a>
+            <a href="#"><li>Жиындар</li></a>
+            <a href="#"><li>Шартты операторлар</li></a>
+            <a href="#"><li>Цикл for</li></a>
+            <a href="#"><li>Цикл while</li></a>
+            <a href="#"><li>Функциялар</li></a>
+        </ol>
+    </div>
+    <div class="section__right">
+        {% block main_content %}
+            {% for content in lecture %}
+                {% if "<h1>" in content %}
+                    <h1>{{ content }}</h1>
+                {% elif "<p>" in content %}
+                    <p>{{ content }}</p>
+                {% endif %}
+            {% endfor %}
+        {% endblock %}
+    </div>
+</section>
+{% endblock %}

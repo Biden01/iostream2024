@@ -1,0 +1,109 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static "main/index.css" %}">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <div class="header__left">
+            <div class="logo">
+                <a href="{% url "main" %}"><img src="{% static "main/img/logo.png" %}" alt="logo"></a>
+            </div>
+        </div>
+        <div class="header__right">
+            <div class="navbar">
+                <ol>
+                    <a href="{% url "main" %}"><li>Басты бет</li></a>
+                    <a href="{% url "news" %}"><li>Жаналықтар</li></a>
+                    <a href="{% url "lecture" %}"><li>Бастау</li></a>
+                    {% block profile %}{% endblock %}
+                </ol>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+
+          <!-- Модальное содержание -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="form-c">
+            <div class="form login">
+                <div class="form-content">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="field input-field">
+                            <input type="text" name="username" placeholder="Username" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" name="password" placeholder="Password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+                        {% if error %}
+                        <h1 style="color:red; text-align: center">{{ error }}</h1>
+                        {% endif %}
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <button type="submit">Login</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="#" class="field facebook">
+                        <i class='bx bxl-facebook facebook-icon'></i>
+                        <span>Login with Facebook</span>
+                    </a>
+                </div>
+
+                <div class="media-options">
+                    <a href="#" class="field google">
+                        <img src="#" alt="" class="google-img">
+                        <span>Login with Google</span>
+                    </a>
+                </div>
+
+            </div>
+            </div>
+          </div>
+        </div>
+        <div id="myModal-2" class="modal">
+        <div class="modal-content">
+            <div class="form-c">
+            <div class="form login">
+                <span class="close-2">&times;</span>
+                <div class="form-content">
+                    <p>username:{{ user.username }}</p>
+                    <form method="post">
+                        <button><a href="{% url 'logout' %}">logout</a></button>
+                    </form>
+                </div>
+
+            </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer></footer>
+    <script src="{% static "main/index.js" %}"></script>
+</body>
+</html>

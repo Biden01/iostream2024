@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8em;
+    padding: 1% 0;
+}
+
+header a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar ol {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ol li {
+    margin-right: 30px;
+}
+
+section:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: auto 0;
+    text-align: center;
+    padding: 1.5em;
+    justify-content: space-between;
+}
+
+section:nth-of-type(1) p {
+    width: 43%;
+    text-align: center;
+}
+
+section:nth-of-type(1) h1 {
+    font-weight: 700;
+    font-size: 3.75rem;
+}
+
+.button:nth-of-type(1) {
+    text-decoration: none;
+    color: white;
+    background-color: #478ac9;
+    padding: 1em 1.5em;
+    border-radius: 50px;
+    margin: 1.5em;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+section:nth-of-type(2) {
+    background: linear-gradient(#191919, #333333);
+    color: white;
+    text-align: center;
+}
+
+section:nth-of-type(2) #first {
+    font-weight: 700;
+    font-size: 3rem;
+    padding: 1.5em;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.block {
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    color: black;
+    background-color: rgb(252, 252, 252);
+    border-radius: 5%;
+    margin: 5% 0;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.button2 {
+    text-decoration: none;
+    color: white;
+    background-color: #c6c6c6;
+    padding: 1em 1.5em;
+    border-radius: 50px;
+    margin: 1.5em;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+
+footer {
+    background-color: #333333;
+    height: 7em;
+}

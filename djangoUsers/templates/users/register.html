@@ -1,0 +1,56 @@
+{% extends 'main/index.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "users/register.css" %}">
+{% endblock %}
+
+{% block content %}
+            <div class="form signup container">
+                <div class="form-content">
+                    <form action="#" method="POST">
+                        {% csrf_token %}
+                        <div class="field input-field">
+                            <input type="text" name="username" placeholder="Пайдаланушы аты" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" name="password1" placeholder="Құпия сөз жасаңыз" class="password">
+                        </div>
+
+                        <div class="field input-field">
+                            <input type="password" name="password2" placeholder="Құпия сөзді Растау" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+                        
+                        {% if error %}
+                        <p style="color:red; text-align: center">{{ error }}</p>
+                        {% endif %}
+
+                        <div class="field button-field">
+                            <button type="submit">Тіркелу</button>
+                        </div>
+                    </form>
+
+{#                    <div class="form-link">#}
+{#                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>#}
+{#                    </div>#}
+                </div>
+
+{#                <div class="line"></div>#}
+{##}
+{#                <div class="media-options">#}
+{#                    <a href="#" class="field facebook">#}
+{#                        <i class='bx bxl-facebook facebook-icon'></i>#}
+{#                        <span>Login with Facebook</span>#}
+{#                    </a>#}
+{#                </div>#}
+{##}
+{#                <div class="media-options">#}
+{#                    <a href="#" class="field google">#}
+{#                        <img src="#" alt="" class="google-img">#}
+{#                        <span>Login with Google</span>#}
+{#                    </a>#}
+{#                </div>#}
+            </div>
+{% endblock %}

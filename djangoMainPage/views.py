@@ -1,3 +1,4 @@
+from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse
 
 from django.contrib.auth import authenticate, login, logout
@@ -17,4 +18,9 @@ def home(request: HttpRequest):
         login(request, user)
         return redirect("/lecture/")
 
-    return render(request=request, template_name="main/main.html", context={"error": "Invalid Credentials", 'user':request.user})
+    return render(request=request, template_name="main/main.html", context={"error": "Пайдаланушы атыңыз және/немесе құпия сөзіңіз дұрыс емес.", 'user':request.user})
+
+
+def logoutProfile(request: HttpRequest):
+    logout(request=request)
+    return redirect("/")

@@ -36,7 +36,7 @@ section:nth-of-type(1) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: auto 0;
     text-align: center;
     padding: 1.5em;
@@ -110,12 +110,13 @@ section:nth-of-type(2) #first {
     font-size: 1.25rem;
 }
 
-p {
-    font-size: 1.1em;
-}
-
 
 footer {
     background-color: #333333;
     height: 7em;
+}
+
+.block h1 {
+    font-size: 1.8rem;
+    font-weight: 550;
 }

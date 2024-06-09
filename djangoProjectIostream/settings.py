@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = 'auth.User'
 
 # Application definition
 
@@ -39,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "djangoMainPage.apps.DjangomainpageConfig",
     "djangoLecturePage.apps.DjangolecturepageConfig",
-    "djangoNewsPage.apps.DjangonewspageConfig"
+    "djangoNewsPage.apps.DjangonewspageConfig",
+    'djangoUsers.apps.DjangousersConfig'
 ]
 
 MIDDLEWARE = [
@@ -107,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'RU-ru'
 
 TIME_ZONE = 'UTC'
 

@@ -52,7 +52,6 @@ section {
 }
 
 .section__right {
-    margin-left: 8em;
     font-weight: 400;
     font-size: 1.3rem;
 }
@@ -69,6 +68,8 @@ section {
     /*background: #c6c6c6;*/
     /*border: 1px black solid;*/
     /*position: fixed;*/
+    width: 60%;
+    margin-right: 30px;
 }
 
 .section__left li {
@@ -80,4 +81,13 @@ section {
 
 .section__left li:hover {
     background: #c6c6c6;
+}
+
+.section__right {
+    display: flex;
+    justify-content: center;
+}
+
+.con__right {
+    width: 500px;
 }

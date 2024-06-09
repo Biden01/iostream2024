@@ -25,5 +25,6 @@ urlpatterns = [
     path('', main_views.home, name='main'),
     path('lecture/', include("djangoLecturePage.urls")),
     path('news/', include("djangoNewsPage.urls")),
-    path('logout/', LogoutView.as_view(next_page=settings.LOGOUT_REDIRECT_URL), name='logout'),
+    path('logout/', main_views.logoutProfile, name='logout'),
+    path('accounts/', include('djangoUsers.urls')),
 ]

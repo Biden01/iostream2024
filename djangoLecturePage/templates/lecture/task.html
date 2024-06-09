@@ -37,14 +37,14 @@
     </div>
     <div class="section__right">
         {% block main_content %}
-            {% for content in lecture %}
-                {% if "<h1>" in content %}
-                    <h1>{{ content }}</h1>
-                {% elif "<p>" in content %}
-                    <p>{{ content }}</p>
-                {% endif %}
-            {% endfor %}
         {% endblock %}
+        <div class="con__left">
+            {% block text_content %}{% endblock %}
+            <iframe src="{% block trinket_url %}{% endblock %}" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+        </div>
+        <div class="con__right">
+            {% block video %}{% endblock %}
+        </div>
     </div>
 </section>
 {% endblock %}

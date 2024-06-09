@@ -49,7 +49,7 @@ footer {
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-.form{
+.form:first-child {
     position: absolute;
     max-width: 430px;
     width: 100%;
@@ -57,18 +57,18 @@ footer {
     border-radius: 6px;
     background: #FFF;
 }
-.form.signup{
-    opacity: 0;
-    pointer-events: none;
-}
-.forms.show-signup .form.signup{
-    opacity: 1;
-    pointer-events: auto;
-}
-.forms.show-signup .form.login{
-    opacity: 0;
-    pointer-events: none;
-}
+/*.form.signup{*/
+/*    opacity: 0;*/
+/*    pointer-events: none;*/
+/*}*/
+/*.forms.show-signup .form.signup{*/
+/*    opacity: 1;*/
+/*    pointer-events: auto;*/
+/*}*/
+/*.forms.show-signup .form.login{*/
+/*    opacity: 0;*/
+/*    pointer-events: none;*/
+/*}*/
 .header-form{
     font-size: 28px;
     font-weight: 600;

@@ -11,19 +11,23 @@
                     <form action="#" method="POST">
                         {% csrf_token %}
                         <div class="field input-field">
-                            <input type="email" name="email" placeholder="Электрондық пошта" class="input">
+                            <input type="email" name="email" placeholder="Электрондық пошта" class="input" required>
                         </div>
-                    
+                        
+{#                        <div class="field input-field">#}
+{#                            <input type="tel" id="phone" name="phone" placeholder="Телефон номер" class="input" pattern="[0-9]{11}" required>#}
+{#                        </div>#}
+                        
                         <div class="field input-field">
-                            <input type="text" name="username" placeholder="Пайдаланушы аты" class="input">
+                            <input type="text" name="username" placeholder="Пайдаланушы аты" class="input" required>
                         </div>
 
                         <div class="field input-field">
-                            <input type="password" name="password1" placeholder="Құпия сөз жасаңыз" class="password">
+                            <input type="password" name="password1" placeholder="Құпия сөз жасаңыз" class="password" required>
                         </div>
 
                         <div class="field input-field">
-                            <input type="password" name="password2" placeholder="Құпия сөзді Растау" class="password">
+                            <input type="password" name="password2" placeholder="Құпия сөзді Растау" class="password" required>
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
                         

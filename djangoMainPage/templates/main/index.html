@@ -54,11 +54,11 @@
                     <form method="POST">
                         {% csrf_token %}
                         <div class="field input-field">
-                            <input type="text" name="username" placeholder="Логин енгізіңіз" class="input">
+                            <input type="text" name="username" placeholder="Логин енгізіңіз" class="input" required>
                         </div>
 
                         <div class="field input-field">
-                            <input type="password" name="password" placeholder="Құпиясөз енгізіңіз" class="password">
+                            <input type="password" name="password" placeholder="Құпиясөз енгізіңіз" class="password" required>
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
                         {% if error %}

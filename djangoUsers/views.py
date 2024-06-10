@@ -1,5 +1,6 @@
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import UserCreationForm
+from djangoUsers.forms import CustomUserCreationForm
 from django.views.generic import View
 from django.shortcuts import render, redirect
 
@@ -10,17 +11,18 @@ class Register(View):
 
     def get(self, request):
         context = {
-            'form': UserCreationForm(),
+            'form': CustomUserCreationForm(),
         }
         return render(request, template_name=self.template_name, context=context)
 
     def post(self, request):
-        form = UserCreationForm(request.POST)
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             form.save()
+            email = form.cleaned_data.get('email')
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password1')
-            user = authenticate(username=username, password=password)
+            user = authenticate(username=username, password=password, email=email)
             login(request, user)
             return redirect('main')
         context = {

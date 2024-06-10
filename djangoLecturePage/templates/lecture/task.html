@@ -11,7 +11,10 @@
 
 {% block profile %}
     {% if user.is_authenticated %}
-        <a href="#" id="myBtn-2"><li>Жеке кабинет</li></a>
+{#        <h5>{{ user.username }}</h5>#}
+        <form method="post">
+{#            <button type="button" class="btn btn-outline-primary"><a href="{% url 'logout' %}">logout</a></button>#}
+        </form>
     {% else %}
         <a href="#" id="myBtn"><li>Кіру/Тіркелу</li></a>
     {% endif %}

@@ -291,3 +291,13 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+svg {
+    margin-left: 20%;
+}

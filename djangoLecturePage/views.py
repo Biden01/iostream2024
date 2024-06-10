@@ -5,7 +5,7 @@ from djangoMainPage.models import Lecture
 # Create your views here.
 def lecture(request):
     context = {
-        'lecture': Lecture.objects.values_list()[0],
+        'lecture': Lecture.objects.values_list(),
         'user': request.user
     }
     if request.method == "GET":
@@ -19,4 +19,4 @@ def lecture(request):
         login(request, user)
         return redirect("/lecture/")
 
-    return render(request=request, template_name="lecture/task.html", context={"error": "Invalid Credentials", 'user':request.user})
+    return render(request=request, template_name="lecture/task.html", context={"error": "Пайдаланушы атыңыз және/немесе құпия сөзіңіз дұрыс емес.", 'user':request.user})

@@ -1,13 +1,35 @@
 {% extends 'lecture/task.html' %}
 
+{% load static %}
+
 {% block title %}
 {% endblock %}
 
-{% block text_content %}
+{% block text_content1 %}
+    <span>
+    Python 3 — это современный язык, на котором просто и приятно писать программы.
+
+    Для печати значений в Питоне есть функция print(). Внутри круглых скобок через запятую мы пишем то, что хотим вывести. Вот программа, которая делает несколько вычислений:
+    </span>
 {% endblock %}
 
-{% block trinket_url %}
+{% block trinket_url1 %}
+    <iframe src="https://trinket.io/embed/python/9c47ec0dff" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 {% endblock %}
 
-{% block video %}
+{% block video1 %}
+    <video src="{% static 'lecture/sabaq.MP4' %}" controls></video>
+{% endblock %}
+
+{% block text_content2 %}
+    Python 3 — это современный язык, на котором просто и приятно писать программы. Для печати значений в Питоне есть функция print(). Внутри круглых скобок через запятую мы пишем то, что хотим вывести. Вот программа, которая делает несколько вычислений:
+{% endblock %}
+{% block video2 %}
+    <video src="{% static 'lecture/sabaq.MP4' %}" controls></video>
+{% endblock %}
+{% block text_content3 %}
+    Python 3 — это современный язык, на котором просто и приятно писать программы. Для печати значений в Питоне есть функция print(). Внутри круглых скобок через запятую мы пишем то, что хотим вывести. Вот программа, которая делает несколько вычислений:
+{% endblock %}
+{% block trinket_url3 %}
+    <iframe src="https://trinket.io/embed/python/9c47ec0dff" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 {% endblock %}

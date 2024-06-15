@@ -27,6 +27,6 @@ class Register(View):
             return redirect('main')
         context = {
             'form': form,
-            'error': "Пайдаланушы атыңыз және/немесе құпия сөзіңіз дұрыс емес.",
+            'error': form.errors,
         }
         return render(request, self.template_name, context)

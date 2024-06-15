@@ -20,3 +20,6 @@ def lecture(request):
         return redirect("/lecture/")
 
     return render(request=request, template_name="lecture/task.html", context={"error": "Пайдаланушы атыңыз және/немесе құпия сөзіңіз дұрыс емес.", 'user':request.user})
+
+def print_input(request):
+    return render(request=request, template_name='lecture/task1-1.html', context={})

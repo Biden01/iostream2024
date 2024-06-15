@@ -83,11 +83,11 @@ section {
     background: #c6c6c6;
 }
 
-.section__right {
-    display: flex;
-    justify-content: center;
+.con__right video {
+    height: 480px;
 }
 
-.con__right {
-    width: 500px;
+.block__con {
+    display: flex;
+    justify-content: center;
 }

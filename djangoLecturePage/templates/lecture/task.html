@@ -24,7 +24,7 @@
 <section class="container">
     <div class="section__left">
         <ol>
-            <a href="#"><li>ЕНГІЗУ - ШЫҒАРУ</li></a>
+            <a href="{% url 'print_input' %}"><li>ЕНГІЗУ - ШЫҒАРУ</li></a>
             <a href="#"><li>Бүтін сандар</li></a>
             <a href="#"><li>Бөлшек сандар</li></a>
             <a href="#"><li>Қатарлар ( мәтіндік тип )</li></a>
@@ -41,12 +41,50 @@
     <div class="section__right">
         {% block main_content %}
         {% endblock %}
-        <div class="con__left">
-            {% block text_content %}{% endblock %}
-            <iframe src="{% block trinket_url %}{% endblock %}" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0"></iframe>
+        <div class="block__con">
+            <div class="con__left">
+                {% block text_content1 %}{% endblock %}
+                {% block trinket_url1 %}{% endblock %}
+            </div>
+            <div class="con__right">
+                {% block video1 %}{% endblock %}
+            </div>
         </div>
-        <div class="con__right">
-            {% block video %}{% endblock %}
+        <div class="block__con">
+            <div class="con__left">
+                {% block text_content2 %}{% endblock %}
+                {% block trinket_url2 %}{% endblock %}
+            </div>
+            <div class="con__right">
+                {% block video2 %}{% endblock %}
+            </div>
+        </div>
+        <div class="block__con">
+            <div class="con__left">
+                {% block text_content3 %}{% endblock %}
+                {% block trinket_url3 %}{% endblock %}
+            </div>
+            <div class="con__right">
+                {% block video3 %}{% endblock %}
+            </div>
+        </div>
+        <div class="block__con">
+            <div class="con__left">
+                {% block text_content4 %}{% endblock %}
+                {% block trinket_url4 %}{% endblock %}
+            </div>
+            <div class="con__right">
+                {% block video4 %}{% endblock %}
+            </div>
+        </div>
+        <div class="block__con">
+            <div class="con__left">
+                {% block text_content5 %}{% endblock %}
+                {% block trinket_url5 %}{% endblock %}
+            </div>
+            <div class="con__right">
+                {% block video5 %}{% endblock %}
+            </div>
         </div>
     </div>
 </section>

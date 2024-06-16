@@ -16,7 +16,8 @@ class CustomUserAdmin(UserAdmin):
                     'phone',
                     'status',
                     'birth_date',
-                    'city'
+                    'city',
+                    'subscribe'
                 )
             }
         )
@@ -31,7 +32,8 @@ class CustomUserAdmin(UserAdmin):
                     'phone',
                     'status',
                     'birth_date',
-                    'city'
+                    'city',
+                    'subscribe'
                 )
             }
         )

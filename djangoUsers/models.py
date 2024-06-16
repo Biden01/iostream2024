@@ -14,3 +14,4 @@ class CustomUser(AbstractUser):
     status = models.CharField(max_length=10, choices=STATUS, default='Student')
     birth_date = models.DateField(null=True, blank=True, default='2001-09-11')
     phone = models.CharField(max_length=11, null=True, blank=True, default='')
+    subscribe = models.BooleanField(default=False)

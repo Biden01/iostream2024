@@ -16,9 +16,13 @@ def home(request: HttpRequest):
     user = authenticate(request, username=username, password=password)
     if user is not None:
         login(request, user)
-        return redirect("/lecture/")
+        return redirect("main")
+    context = {
+        "error": "Пайдаланушы атыңыз және/немесе құпия сөзіңіз дұрыс емес.",
+        'user': request.user
+    }
 
-    return render(request=request, template_name="main/main.html", context={"error": "Пайдаланушы атыңыз және/немесе құпия сөзіңіз дұрыс емес.", 'user':request.user})
+    return render(request=request, template_name="main/main.html", context=context)
 
 
 def logoutProfile(request: HttpRequest):

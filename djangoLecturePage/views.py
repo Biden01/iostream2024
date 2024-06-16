@@ -25,6 +25,8 @@ def lecture(request):
                 return redirect("/lecture/")
 
             return render(request=request, template_name="lecture/task.html", context={"error": "Пайдаланушы атыңыз және/немесе құпия сөзіңіз дұрыс емес.", 'user':request.user})
+        else:
+            return redirect(redirect_page)
     else:
         return redirect(redirect_page)
 
@@ -32,5 +34,7 @@ def print_input(request):
     if request.user.is_anonymous == False:
         if request.user.subscribe:
             return render(request=request, template_name='lecture/task1-1.html', context={})
+        else:
+            return redirect(redirect_page)
     else:
         return redirect(redirect_page)

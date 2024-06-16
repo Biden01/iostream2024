@@ -33,7 +33,7 @@ header a {
 }
 
 .container {
-    width: 86%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -85,6 +85,7 @@ section {
 
 .con__right video {
     height: 480px;
+    width: 290px;
 }
 
 .block__con {

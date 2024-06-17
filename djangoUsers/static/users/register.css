@@ -2,3 +2,11 @@
     width: 30%;
     margin: 50px auto;
 }
+
+.error {
+    color: red;
+}
+
+.error ul {
+    list-style: inside;
+}

@@ -20,7 +20,23 @@ class CustomUserCreationForm(UserCreationForm):
         email = self.cleaned_data['email']
         if CustomUser.objects.filter(email=email).exists():
             raise ValidationError("Электрондық пошта бұрыннан бар")
+
         return email
+
+    def clean_username(self):
+        username = self.cleaned_data['username']
+        if CustomUser.objects.filter(username=username).exists():
+            raise ValidationError("Пайдаланушы аты бұрыннан бар")
+
+        return username
+
+    def clean_phone(self):
+        phone = self.cleaned_data['phone']
+        if CustomUser.objects.filter(phone=phone).exists():
+            raise ValidationError("Телефон номер бұрыннан бар")
+
+        return phone
+
 
     def save(self, commit=True):
         user = super().save(commit=False)

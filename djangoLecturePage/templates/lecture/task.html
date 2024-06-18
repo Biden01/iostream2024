@@ -44,39 +44,41 @@
         <div class="block__con">
             <div class="con__left">
                 {% block text_content1 %}{% endblock %}
-                {% block trinket_url1 %}{% endblock %}
             </div>
-            <div class="con__right">
+{#            <div class="con__high">#}
+{#            </div>#}
+            <div class="con__right con__high">
                 {% block video1 %}{% endblock %}
             </div>
         </div>
+        {% block trinket_url1 %}{% endblock %}
         <div class="block__con">
             <div class="con__left">
                 {% block text_content2 %}{% endblock %}
-                {% block trinket_url2 %}{% endblock %}
             </div>
-            <div class="con__right">
+            <div class="con__right con__high">
                 {% block video2 %}{% endblock %}
             </div>
         </div>
+        {% block trinket_url2 %}{% endblock %}
         <div class="block__con">
             <div class="con__left">
                 {% block text_content3 %}{% endblock %}
-                {% block trinket_url3 %}{% endblock %}
             </div>
-            <div class="con__right">
+            <div class="con__right con__high">
                 {% block video3 %}{% endblock %}
             </div>
         </div>
+        {% block trinket_url3 %}{% endblock %}
         <div class="block__con">
             <div class="con__left">
                 {% block text_content4 %}{% endblock %}
-                {% block trinket_url4 %}{% endblock %}
             </div>
             <div class="con__right">
                 {% block video4 %}{% endblock %}
             </div>
         </div>
+        {% block trinket_url4 %}{% endblock %}
         <div class="block__con">
             <div class="con__left">
                 {% block text_content5 %}{% endblock %}
@@ -88,4 +90,5 @@
         </div>
     </div>
 </section>
+<script src="{% static 'lecture/task.js' %}"></script>
 {% endblock %}

@@ -1,3 +1,7 @@
+ifame {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,36 +9,9 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 8em;
-    padding: 1% 0;
-}
-
-header a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-.logo img {
-    width: 100px;
-    height: 100px;
-}
-
-.navbar ol {
-    list-style: none;
-    display: flex;
-}
-
-.navbar ol li {
-    margin-right: 30px;
-}
-
 .container {
-    width: 70%;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 220px 0 auto;
 }
 
 footer {
@@ -88,7 +65,13 @@ section {
     width: 290px;
 }
 
-.block__con {
-    display: flex;
-    justify-content: center;
+@media (min-width: 879px) {
+    .block__con {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.con__high {
+    height: 100%;
 }

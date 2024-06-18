@@ -13,7 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 8em;
+    margin: 0 auto;
     padding: 1% 0;
 }
 
@@ -27,12 +27,12 @@ header a {
     height: 100px;
 }
 
-.navbar ol {
+.navbar-1 ol {
     list-style: none;
     display: flex;
 }
 
-.navbar ol li {
+.navbar-1 ol li {
     margin-right: 30px;
 }
 
@@ -195,7 +195,6 @@ a.google span{
     .form{
         padding: 20px 10px;
     }
-
 }
 
 body {
@@ -227,12 +226,12 @@ header a {
     height: 100px;
 }
 
-.navbar ol {
+.navbar-1 ol {
     list-style: none;
     display: flex;
 }
 
-.navbar ol li {
+.navbar-1 ol li {
     margin-right: 30px;
 }
 
@@ -295,4 +294,27 @@ footer {
 
 svg {
     margin-left: 20%;
+}
+
+.navbar-1 {
+    /*display: none;*/
+}
+
+.navbar-2 {
+    display: none;
+}
+
+.list {
+    /*display: none;*/
+}
+
+@media (max-width: 743px) {
+    header {
+        justify-content: space-around;
+        margin: 0;
+    }
+}
+
+svg:hover {
+
 }

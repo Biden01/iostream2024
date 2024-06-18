@@ -19,6 +19,7 @@ class CustomUser(AbstractUser):
         null=True,
         blank=True,
         default='',
-        validators=[RegexValidator('\+[0-9]{1}\([0-9]{3}\)[0-9]{3}\-[0-9]{4}')]
+        validators=[RegexValidator('\+[0-9]{1}\([0-9]{3}\)[0-9]{3}\-[0-9]{4}')],
+        error_messages='Телефон нөмірі қате енгізілді.'
     )
     subscribe = models.BooleanField(default=False)

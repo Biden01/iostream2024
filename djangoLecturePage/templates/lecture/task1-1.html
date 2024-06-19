@@ -20,7 +20,7 @@
 {% endblock %}
 
 {% block video1 %}
-    <video id="player1" data-poster="/path/to/poster.jpg" controls>
+    <video id="player" data-poster="/path/to/poster.jpg" controls>
       <source src="{% static 'lecture/sabaq.MP4' %}" type="video/mp4" />
     </video>
 {% endblock %}
@@ -29,8 +29,8 @@
     Python 3 — это современный язык, на котором просто и приятно писать программы. Для печати значений в Питоне есть функция print(). Внутри круглых скобок через запятую мы пишем то, что хотим вывести. Вот программа, которая делает несколько вычислений:
 {% endblock %}
 {% block video2 %}
-    <video id="player2" playsinline controls data-poster="/path/to/poster.jpg">
-      <source src="{% static 'lecture/sabaq.MP4' %}" type="video/mp4" />
+    <video id="player" playsinline controls data-poster="/path/to/poster.jpg">
+      <source src="{% static 'lecture/sabaq.MP4' %}" class="video-link" type="video/mp4" />
     </video>
 {% endblock %}
 {% block text_content3 %}

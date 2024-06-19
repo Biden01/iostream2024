@@ -13,3 +13,19 @@ function onFrameLoad() {
 frames.forEach(function(frame) {
     frame.addEventListener('load', onFrameLoad);
 });
+
+let player
+
+document.addEventListener('DOMContentLoaded', () => {
+  const players = Array.from(document.querySelectorAll('video, audio')).map(p => new Plyr(p));
+});
+
+window.onload = function() {
+    // Предположим, что у всех ссылок на видео есть класс 'video-link'
+    var videoLinks = document.querySelectorAll("source");
+
+    videoLinks.forEach(function(link) {
+        link.remove();
+    });
+};
+

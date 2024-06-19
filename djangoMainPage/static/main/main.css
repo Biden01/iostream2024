@@ -61,10 +61,10 @@ section:nth-of-type(2) #first {
     margin: 5% 0;
 }
 
-.container {
-    max-width: 700px;
-    margin: 0 auto;
-}
+/*.container {*/
+/*    max-width: 700px;*/
+/*    margin: 0 auto;*/
+/*}*/
 
 .button2 {
     text-decoration: none;

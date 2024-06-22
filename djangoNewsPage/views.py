@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from django.views import View
 
-# Create your views here.
-def news(request):
-    return render(request=request, template_name="news/news.html")
+
+class NewsView(View):
+    def get(self, request):
+        return render(request=request, template_name="news/news.html")

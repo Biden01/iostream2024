@@ -1,14 +1,12 @@
 from django.contrib import admin
-from django.contrib.auth.views import LogoutView
 from django.urls import path, include
-import djangoMainPage.views as main_views
-from djangoProjectIostream import settings
+from djangoMainPage import views as main_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', main_views.home, name='main'),
+    path('', main_views.HomeView.as_view(), name='main'),
     path('lecture/', include("djangoLecturePage.urls")),
     path('news/', include("djangoNewsPage.urls")),
-    path('logout/', main_views.logoutProfile, name='logout'),
+    path('logout/', main_views.LogoutView.as_view(), name='logout'),
     path('accounts/', include('djangoUsers.urls')),
 ]

@@ -14,14 +14,14 @@
 {% endblock %}
 
 {% block trinket_url1 %}
-{#    <div style="overflow: hidden; width: 100%; height: 356px;">#}
-{#        <iframe src="https://trinket.io/embed/python/9c47ec0dff" id="trinket" width="100%" height="356" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>#}
-{#    </div>#}
+    <div style="overflow: hidden; width: 100%; height: 356px;">
+        <iframe src="https://trinket.io/embed/python/9c47ec0dff" id="trinket" width="100%" height="356" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
 {% endblock %}
 
 {% block video1 %}
     <video id="player" controls>
-      <source src="{% static 'lecture/sabaqq.MP4' %}" type="video/mp4" />
+      <source src="{% static 'lecture/sabaqq.MP4' %}" class="video-link" type="video/mp4" />
     </video>
 {% endblock %}
 
@@ -37,9 +37,9 @@
     Python 3 — это современный язык, на котором просто и приятно писать программы. Для печати значений в Питоне есть функция print(). Внутри круглых скобок через запятую мы пишем то, что хотим вывести. Вот программа, которая делает несколько вычислений:
 {% endblock %}
 {% block trinket_url3 %}
-{#    <div style="overflow: hidden; width: 100%; height: 356px;">#}
-{#        <iframe src="https://trinket.io/embed/python/ad0e32fa19?runOption=run&showInstructions=true" id='trinket' allowtransparency="true" scrolling="no" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>#}
-{#    </div>#}
+    <div style="overflow: hidden; width: 100%; height: 356px;">
+        <iframe src="https://trinket.io/embed/python/ad0e32fa19?runOption=run&showInstructions=true" id='trinket' allowtransparency="true" scrolling="no" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
 {#    <script src="{% static 'lecture/task1-1.js' %}"></script>#}
 {% endblock %}
 {% block text_content5 %}

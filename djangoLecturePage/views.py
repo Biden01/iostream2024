@@ -2,7 +2,6 @@ from django.contrib.auth import authenticate, login
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render, redirect
 from djangoMainPage.models import Lecture
-from djangoUsers.models import CustomUser
 from django.views import View
 
 redirect_page = 'main'
@@ -33,3 +32,5 @@ class LecturePageView(View):
 class PrintInputView(View):
     def get(self, request: HttpRequest) -> HttpResponse:
         return render(request, 'lecture/task1-1.html')
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)

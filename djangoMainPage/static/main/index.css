@@ -15,7 +15,6 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 1% 0;
 }
 
 header a {
@@ -213,7 +212,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 8em;
+    margin: 0 2em;
     padding: 1% 0;
 }
 

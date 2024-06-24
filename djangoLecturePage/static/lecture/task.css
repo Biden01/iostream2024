@@ -2,16 +2,9 @@ ifame {
     overflow: hidden;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(255, 255, 255);
-}
-
 .container {
     max-width: 1200px;
-    margin: 0 220px 0 auto;
+    margin: auto 0;
 }
 
 footer {
@@ -29,8 +22,8 @@ section {
 }
 
 .section__right {
-    font-weight: 400;
-    font-size: 1.3rem;
+    font-weight: 200;
+    font-size: 1.1rem;
 }
 
 .section__left a {
@@ -39,6 +32,10 @@ section {
     font-weight: 600;
     font-size: 1.10rem;
 
+}
+
+ol {
+    padding: 0;
 }
 
 .section__left {
@@ -54,6 +51,7 @@ section {
     /*border: 1px black solid;*/
     border-radius: 5%;
     padding: 15px;
+    font-size: 1rem;
 }
 
 .section__left li:hover {

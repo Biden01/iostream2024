@@ -29,14 +29,8 @@
                 <a href="{% url 'print_input' %}"><li>print</li></a>
                 <a href="{% url 'print_input' %}"><li>input</li></a>
             </ol>
-            <a href="#"><li>Бүтін сандар</li></a>
-            <a href="#"><li>Бөлшек сандар</li></a>
-            <a href="#"><li>Қатарлар ( мәтіндік тип )</li></a>
-            <a href="#"><li>Массивтер (Тізімдер)</li></a>
-            <a href="#"><li>Кортеждер</li></a>
-            <a href="#"><li>Сөздіктер</li></a>
-            <a href="#"><li>Жиындар</li></a>
-            <a href="#"><li>Шартты операторлар</li></a>
+            <a href="{% url 'if_else' %}"><li>Шартты операторлар</li></a>
+            <a href="{% url 'calculations' %}"><li>Есептеулер</li></a>
             <a href="#"><li>Цикл for</li></a>
             <a href="#"><li>Цикл while</li></a>
             <a href="#"><li>Функциялар</li></a>
@@ -144,6 +138,28 @@
                 </div>
             </div>
         {% block trinket_url9 %}{% endblock %}
+        </div>
+        <div class="block">
+            <div class="block__con">
+                <div class="con__left">
+                    {% block text_content10 %}{% endblock %}
+                </div>
+                <div class="con__right con__high">
+                    {% block video10 %}{% endblock %}
+                </div>
+            </div>
+        {% block trinket_url10 %}{% endblock %}
+        </div>
+        <div class="block">
+            <div class="block__con">
+                <div class="con__left">
+                    {% block text_content11 %}{% endblock %}
+                </div>
+                <div class="con__right con__high">
+                    {% block video11 %}{% endblock %}
+                </div>
+            </div>
+        {% block trinket_url11 %}{% endblock %}
         </div>
     </div>
 </section>

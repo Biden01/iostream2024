@@ -34,3 +34,17 @@ class PrintInputView(View):
         return render(request, 'lecture/lecture1-1.html')
     def post(self, request: HttpRequest) -> HttpResponse:
         return redirect(redirect_page)
+
+class IfElseView(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'lecture/lecture2-1.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+class CalculationsView(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'lecture/lecture3-1.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)

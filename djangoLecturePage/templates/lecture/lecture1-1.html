@@ -3,45 +3,87 @@
 {% load static %}
 
 {% block title %}
+    Деректерді енгізу және шығару
+{% endblock %}
+
+{% block header %}
+    <h1>Деректерді енгізу және шығару</h1>
 {% endblock %}
 
 {% block text_content1 %}
-    Python 3 — это современный язык, на котором просто и приятно писать программы.
+    <p>Python — қазіргі таңдағы ең танымал бағдарламалау тілдерінің бірі. Python тілін 1991 жылы Гидо ван Россум жазып шығарған. Python тілі келесі мақсаттарда кеңінен қолданылады:</p>
+    <ul>
+        <li>веб-әзірлеу (сервер жағында)</li>
+        <li>бағдарламалық қамтамасыз ету</li>
+        <li>математика</li>
+        <li>тағы басқа</li>
+    </ul>
+    <p>Мәндерді басып шығару үшін Python-да print() функциясы бар. Жақшаның ішіне үтірмен бөліп, біз шығарғымыз келетін объектілерді жазамыз. Міне, бірнеше есептеулер жасайтын бағдарлама:</p>
+{% endblock %}
 
-    Для печати значений в Питоне есть функция print(). Внутри круглых скобок через запятую мы пишем то, что хотим вывести. Вот программа, которая делает несколько вычислений:
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus est et, eveniet expedita hic neque nobis provident quaerat quam quis, repellat sed vel voluptatem.
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid corporis, dolor et incidunt libero perspiciatis saepe sapiente tempore. At aut culpa deserunt excepturi fugiat ipsum iure, maxime modi molestias nostrum odit officia officiis omnis placeat provident quasi quis quod recusandae sit, vitae? Aliquam, numquam voluptatem?
+{% block text_content2 %}
+    <p>Бағдарламаға деректерді енгізу үшін input() функциясын қолданамыз. Ол бір жолды оқиды.</p>
+    <p>Міне, пайдаланушы атын оқитын және онымен сәлемдесетін бағдарлама:</p>
+{% endblock %}
+
+{% block text_content3 %}
+    <p>Біз деректерді оқитын, өңдейтін және кейбір нәтиже шығаратын бағдарламалар жазамыз. Компьютерде іске қосылған кезде мұндай бағдарламаларпайдаланушы пернетақтадан енгізген мәліметтерді оқиды және нәтижені экранда көрсетеді.</p>
+    <p>Екі санды оқитын және олардың қосындысын көрсететін программа жазып көрейік. Ол үшін = меншіктеу(тағайындау) операторы арқылы екі санды санап, оларды a және b айнымалыларында сақтаймыз. Python бағдарламаларындағы меншіктеу(тағайындау) операторының сол жағында айнымалының аты орналасқан – мысалы, латын әріптерінің тізбегі. Кез келген өрнекті меншіктеу(тағайындау) операторының оң жағына қоюға болады. Атау өрнекті бағалау нәтижесін көрсетеді. Төмендегі бағдарламанының нәтижелелерін қараңыз:</p>
+{% endblock %}
+
+{% block text_content4 %}
+    <p>Біз бағдарлама 57 шығаратынын көреміз, дегенмен біз тура есептесек 5 + 7 = 12 болады. Бұл үшінші жолдағы Python екі санды емес, екі жолды(str - мәтін)  «қосқандықтан» осылай болды. Python-да екі жол келесідей қосылады: екінші жол бірінші жолға қосылады.</p>
+    <p>Визуализаторда a және b айнымалыларының мазмұны тырнақшаға алынғанын ескеріңіз. Бұл a және b сандарды емес, жолдарды(str - мәтін) қамтитынын білдіреді.</p>
+    <p>Python тілінде барлық деректер объект деп аталады. 2 саны «сан 2» объектісі болып табылады, ал «сәлем» сөзі ‘«сәлем» сөз қатары (str)’ объектісі болып табылады.</p>
+    <p>Әрбір объект қандай да бір типке жатады. Жолдар str типті объектілерде, бүтін сандар int типті объектілерде, ал бөлшек сандар (нақты сандар) float типті объектілерде сақталады. Объекттің типі осы типтегі объектілермен қандай әрекеттер жасауға болатындығын анықтайды. Мысалы, егер бірінші және екінші айнымалылар int типті объектілерді қамтыса, онда оларды көбейтуге болады, ал егер оларда str типті нысандар болса, онда оларды көбейтуге болмайды:</p>
+{% endblock %}
+
+{% block text_content5 %}
+    <p>Сандар жолын (str – мәтін) бүтін санға түрлендіру үшін int() функциясын қолданамыз. Мысалы, int('23') → 23 санын қайтарады.</p>
+    <p>Міне, екі санды оқитын және олардың қосындысын басып шығаратын дұрыс бағдарламаның мысалы:</p>
 {% endblock %}
 
 {% block trinket_url1 %}
-    <div style="overflow: hidden; width: 100%; height: 356px;">
-        <iframe src="https://trinket.io/embed/python/9c47ec0dff" id="trinket" width="100%" height="356" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-    </div>
+    <iframe src="https://trinket.io/embed/python/1dde357337" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+{% endblock %}
+
+{#{% block trinket_url2 %}#}
+{#    <iframe src="https://trinket.io/embed/python/9bcaf4cbed" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>#}
+{#{% endblock %}#}
+
+{% block trinket_url2 %}
+    <iframe src="https://trinket.io/embed/python/a0a7b5989d" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+{% endblock %}
+
+{% block trinket_url3 %}
+    <iframe src="https://trinket.io/embed/python/ee2204bec2" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+{% endblock %}
+
+{% block trinket_url4 %}
+    <iframe src="https://trinket.io/embed/python/80b289fab3" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 {% endblock %}
 
 {% block video1 %}
     <video id="player" controls>
-      <source src="{% static 'lecture/sabaqq.MP4' %}" class="video-link" type="video/mp4" />
+      <source src="{% static 'video/input-3.mp4' %}" class="video-link" type="video/mp4" />
     </video>
 {% endblock %}
 
-{% block text_content2 %}
-    Python 3 — это современный язык, на котором просто и приятно писать программы. Для печати значений в Питоне есть функция print(). Внутри круглых скобок через запятую мы пишем то, что хотим вывести. Вот программа, которая делает несколько вычислений:
-{% endblock %}
 {% block video2 %}
     <video id="player" controls>
-      <source src="{% static 'lecture/sabaqq.MP4' %}" class="video-link" type="video/mp4" />
+      <source src="{% static 'video/input-2.mp4' %}" class="video-link" type="video/mp4" />
     </video>
 {% endblock %}
-{% block text_content3 %}
-    Python 3 — это современный язык, на котором просто и приятно писать программы. Для печати значений в Питоне есть функция print(). Внутри круглых скобок через запятую мы пишем то, что хотим вывести. Вот программа, которая делает несколько вычислений:
+
+{% block video3 %}
+    <video id="player" controls>
+      <source src="{% static 'video/input-1.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
 {% endblock %}
-{% block trinket_url3 %}
-    <div style="overflow: hidden; width: 100%; height: 356px;">
-        <iframe src="https://trinket.io/embed/python/ad0e32fa19?runOption=run&showInstructions=true" id='trinket' allowtransparency="true" scrolling="no" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-    </div>
-{#    <script src="{% static 'lecture/lecture1-1.js' %}"></script>#}
+
+{% block video4 %}
+    <video id="player" controls>
+      <source src="{% static 'video/input-4.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
 {% endblock %}
-{% block text_content5 %}
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, delectus eligendi inventore libero maxime molestias neque nulla quod reiciendis. Consectetur excepturi, iusto quam qui sed sint soluta temporibus. Ad, aliquam dolore exercitationem id inventore iure maxime, minima necessitatibus nulla praesentium, quasi repellendus sapiente! Excepturi itaque nesciunt non, quos repellat velit.
-{% endblock %}
+

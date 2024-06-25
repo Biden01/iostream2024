@@ -27,7 +27,7 @@ section {
 }
 
 .section__right {
-    font-weight: 200;
+    /*font-weight: 200;*/
     font-size: 1.1rem;
 }
 
@@ -72,8 +72,12 @@ ol {
 @media (min-width: 879px) {
     .block__con {
         display: flex;
-        justify-content: center;
+        /*justify-content: center;*/
     }
+}
+
+.block {
+    margin: 50px 0;
 }
 
 .con__high {

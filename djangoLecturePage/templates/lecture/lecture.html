@@ -43,54 +43,107 @@
         </ol>
     </div>
     <div class="section__right">
+        {% block header %}{% endblock %}
         {% block main_content %}
         {% endblock %}
-        <div class="block__con">
-            <div class="con__left">
-                {% block text_content1 %}{% endblock %}
+        <div class="block">
+            <div class="block__con">
+                <div class="con__left">
+                    {% block text_content1 %}{% endblock %}
+                </div>
+                <div class="con__right con__high">
+                    {% block video1 %}{% endblock %}
+                </div>
             </div>
-{#            <div class="con__high">#}
-{#            </div>#}
-            <div class="con__right con__high">
-                {% block video1 %}{% endblock %}
+            {% block trinket_url1 %}{% endblock %}
+        </div>
+        <div class="block">
+            <div class="block__con">
+                <div class="con__left">
+                    {% block text_content2 %}{% endblock %}
+                    {% block trinket_url2 %}{% endblock %}
+                </div>
+                <div class="con__right con__high">
+                    {% block video2 %}{% endblock %}
+                </div>
             </div>
         </div>
-        {% block trinket_url1 %}{% endblock %}
-        <div class="block__con">
-            <div class="con__left">
-                {% block text_content2 %}{% endblock %}
+        <div class="block">
+            <div class="block__con">
+                <div class="con__left">
+                    {% block text_content3 %}{% endblock %}
+                </div>
+                <div class="con__right con__high">
+                    {% block video3 %}{% endblock %}
+                </div>
             </div>
-            <div class="con__right con__high">
-                {% block video2 %}{% endblock %}
-            </div>
-        </div>
-        {% block trinket_url2 %}{% endblock %}
-        <div class="block__con">
-            <div class="con__left">
-                {% block text_content3 %}{% endblock %}
-            </div>
-            <div class="con__right con__high">
-                {% block video3 %}{% endblock %}
-            </div>
-        </div>
         {% block trinket_url3 %}{% endblock %}
-        <div class="block__con">
-            <div class="con__left">
-                {% block text_content4 %}{% endblock %}
-            </div>
-            <div class="con__right">
-                {% block video4 %}{% endblock %}
-            </div>
         </div>
+        <div class="block">
+            <div class="block__con">
+                <div class="con__left">
+                    {% block text_content4 %}{% endblock %}
+                </div>
+                <div class="con__right con__high">
+                    {% block video4 %}{% endblock %}
+                </div>
+            </div>
         {% block trinket_url4 %}{% endblock %}
-        <div class="block__con">
-            <div class="con__left">
-                {% block text_content5 %}{% endblock %}
-                {% block trinket_url5 %}{% endblock %}
+        </div>
+        <div class="block">
+            <div class="block__con">
+                <div class="con__left">
+                    {% block text_content5 %}{% endblock %}
+                </div>
+                <div class="con__right con__high">
+                    {% block video5 %}{% endblock %}
+                </div>
             </div>
-            <div class="con__right">
-                {% block video5 %}{% endblock %}
+        {% block trinket_url5 %}{% endblock %}
+        </div>
+        <div class="block">
+            <div class="block__con">
+                <div class="con__left">
+                    {% block text_content6 %}{% endblock %}
+                </div>
+                <div class="con__right con__high">
+                    {% block video6 %}{% endblock %}
+                </div>
             </div>
+        {% block trinket_url6 %}{% endblock %}
+        </div>
+        <div class="block">
+            <div class="block__con">
+                <div class="con__left">
+                    {% block text_content7 %}{% endblock %}
+                </div>
+                <div class="con__right con__high">
+                    {% block video7 %}{% endblock %}
+                </div>
+            </div>
+        {% block trinket_url7 %}{% endblock %}
+        </div>
+        <div class="block">
+            <div class="block__con">
+                <div class="con__left">
+                    {% block text_content8 %}{% endblock %}
+                </div>
+                <div class="con__right con__high">
+                    {% block video8 %}{% endblock %}
+                </div>
+            </div>
+        {% block trinket_url8 %}{% endblock %}
+        </div>
+        <div class="block">
+            <div class="block__con">
+                <div class="con__left">
+                    {% block text_content9 %}{% endblock %}
+                </div>
+                <div class="con__right con__high">
+                    {% block video9 %}{% endblock %}
+                </div>
+            </div>
+        {% block trinket_url9 %}{% endblock %}
         </div>
     </div>
 </section>

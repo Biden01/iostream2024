@@ -148,5 +148,14 @@
     </div>
 </section>
 <script src="{% static 'lecture/lecture.js' %}"></script>
-<style>.plyr__volume {display: none;}</style>
+<style>
+    .plyr__volume {
+        display: none;
+    }
+    @media (min-width: 879px) {
+        .plyr__control[data-plyr='fullscreen'] {
+            display: none;
+        }
+    }
+</style>
 {% endblock %}

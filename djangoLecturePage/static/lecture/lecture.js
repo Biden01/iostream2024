@@ -14,8 +14,6 @@ frames.forEach(function(frame) {
     frame.addEventListener('load', onFrameLoad);
 });
 
-let player
-
 document.addEventListener('DOMContentLoaded', () => {
   const players = Array.from(document.querySelectorAll('video, audio')).map(p => new Plyr(p));
 });

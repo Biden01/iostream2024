@@ -1,0 +1,99 @@
+{% extends "main/index.html" %}
+{% load static %}
+
+{% block title %}
+    {{ lecture.lecture }}
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static "lecture/lecture.css" %}">
+{% endblock %}
+
+{% block profile %}
+    {% if user.is_authenticated %}
+{#        <h5>{{ user.username }}</h5>#}
+        <form method="post">
+{#            <button type="button" class="btn btn-outline-primary"><a href="{% url 'logout' %}">logout</a></button>#}
+        </form>
+    {% else %}
+{#        <a href="#" id="myBtn"><li>Кіру/Тіркелу</li></a>#}
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+<section class="container">
+    <div class="section__left">
+        <ol>
+            <a href="{% url 'print_input' %}"><li>ЕНГІЗУ - ШЫҒАРУ</li></a>
+            <ol>
+                <a href="{% url 'print_input' %}"><li>print</li></a>
+                <a href="{% url 'print_input' %}"><li>input</li></a>
+            </ol>
+            <a href="#"><li>Бүтін сандар</li></a>
+            <a href="#"><li>Бөлшек сандар</li></a>
+            <a href="#"><li>Қатарлар ( мәтіндік тип )</li></a>
+            <a href="#"><li>Массивтер (Тізімдер)</li></a>
+            <a href="#"><li>Кортеждер</li></a>
+            <a href="#"><li>Сөздіктер</li></a>
+            <a href="#"><li>Жиындар</li></a>
+            <a href="#"><li>Шартты операторлар</li></a>
+            <a href="#"><li>Цикл for</li></a>
+            <a href="#"><li>Цикл while</li></a>
+            <a href="#"><li>Функциялар</li></a>
+        </ol>
+    </div>
+    <div class="section__right">
+        {% block main_content %}
+        {% endblock %}
+        <div class="block__con">
+            <div class="con__left">
+                {% block text_content1 %}{% endblock %}
+            </div>
+{#            <div class="con__high">#}
+{#            </div>#}
+            <div class="con__right con__high">
+                {% block video1 %}{% endblock %}
+            </div>
+        </div>
+        {% block trinket_url1 %}{% endblock %}
+        <div class="block__con">
+            <div class="con__left">
+                {% block text_content2 %}{% endblock %}
+            </div>
+            <div class="con__right con__high">
+                {% block video2 %}{% endblock %}
+            </div>
+        </div>
+        {% block trinket_url2 %}{% endblock %}
+        <div class="block__con">
+            <div class="con__left">
+                {% block text_content3 %}{% endblock %}
+            </div>
+            <div class="con__right con__high">
+                {% block video3 %}{% endblock %}
+            </div>
+        </div>
+        {% block trinket_url3 %}{% endblock %}
+        <div class="block__con">
+            <div class="con__left">
+                {% block text_content4 %}{% endblock %}
+            </div>
+            <div class="con__right">
+                {% block video4 %}{% endblock %}
+            </div>
+        </div>
+        {% block trinket_url4 %}{% endblock %}
+        <div class="block__con">
+            <div class="con__left">
+                {% block text_content5 %}{% endblock %}
+                {% block trinket_url5 %}{% endblock %}
+            </div>
+            <div class="con__right">
+                {% block video5 %}{% endblock %}
+            </div>
+        </div>
+    </div>
+</section>
+<script src="{% static 'lecture/lecture.js' %}"></script>
+<style>.plyr__volume {display: none;}</style>
+{% endblock %}

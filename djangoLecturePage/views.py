@@ -13,7 +13,7 @@ class LecturePageView(View):
             'lecture': Lecture.objects.values_list(),
             'user': request.user
         }
-        return render(request=request, template_name="lecture/task.html", context=context)
+        return render(request=request, template_name="lecture/lecture.html", context=context)
 
     def post(self, request: HttpRequest) -> HttpResponse:
         username = request.POST["username"]
@@ -24,13 +24,13 @@ class LecturePageView(View):
             login(request, user)
             return redirect(redirect_page)
 
-        return render(request=request, template_name="lecture/task.html",
+        return render(request=request, template_name="lecture/lecture.html",
                       context={"error": "Пайдаланушы атыңыз және/немесе құпия сөзіңіз дұрыс емес.",
                                'user': request.user})
 
 
 class PrintInputView(View):
     def get(self, request: HttpRequest) -> HttpResponse:
-        return render(request, 'lecture/task1-1.html')
+        return render(request, 'lecture/lecture1-1.html')
     def post(self, request: HttpRequest) -> HttpResponse:
         return redirect(redirect_page)

@@ -85,3 +85,7 @@ ol ol li {
     background: rgba(176, 176, 176, 0.3);
     /*border: 0.2px solid black;*/
 }
+
+ol ol {
+    border-left: 1px solid black;
+}

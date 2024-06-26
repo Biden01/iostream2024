@@ -24,16 +24,30 @@
 <section class="container">
     <div class="section__left">
         <ol>
-            <a href="{% url 'print_input' %}"><li>ЕНГІЗУ - ШЫҒАРУ</li></a>
+            <a href="{% url 'print_input' %}"><li>1. ЕНГІЗУ - ШЫҒАРУ</li></a>
             <ol>
-                <a href="{% url 'print_input' %}"><li>print</li></a>
-                <a href="{% url 'print_input' %}"><li>input</li></a>
+                {% block lecture_nav_1 %}{% endblock %}
             </ol>
-            <a href="{% url 'if_else' %}"><li>Шартты операторлар</li></a>
-            <a href="{% url 'calculations' %}"><li>Есептеулер</li></a>
+            <a href="{% url 'if_else' %}"><li>2. Шартты операторлар</li></a>
+            <ol>
+                {% block lecture_nav_2 %}{% endblock %}
+            </ol>
+            <a href="{% url 'calculations' %}"><li>3. Есептеулер</li></a>
+            <ol>
+                {% block lecture_nav_3 %}{% endblock %}
+            </ol>
             <a href="#"><li>Цикл for</li></a>
+            <ol>
+                {% block lecture_nav_4 %}{% endblock %}
+            </ol>
             <a href="#"><li>Цикл while</li></a>
+            <ol>
+                {% block lecture_nav_5 %}{% endblock %}
+            </ol>
             <a href="#"><li>Функциялар</li></a>
+            <ol>
+                {% block lecture_nav_6 %}{% endblock %}
+            </ol>
         </ol>
     </div>
     <div class="section__right">

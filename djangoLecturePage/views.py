@@ -35,6 +35,7 @@ class PrintInputView(View):
     def post(self, request: HttpRequest) -> HttpResponse:
         return redirect(redirect_page)
 
+
 class IfElseView(View):
     def get(self, request: HttpRequest) -> HttpResponse:
         return render(request, 'lecture/lecture2-1.html')
@@ -42,9 +43,69 @@ class IfElseView(View):
     def post(self, request: HttpRequest) -> HttpResponse:
         return redirect(redirect_page)
 
+
 class CalculationsView(View):
     def get(self, request: HttpRequest) -> HttpResponse:
         return render(request, 'lecture/lecture3-1.html')
 
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class ForLoopView(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'lecture/lecture4-1.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class StrView(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'lecture/lecture5-1.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class WhileLoopView(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'lecture/lecture6-1.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class ListView(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'lecture/lecture7-1.html')
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class FunctionView(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'lecture/lecture8-1.html')
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class ArrayView(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'lecture/lecture9-1.html')
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class SetsView(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'lecture/lecture10-1.html')
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class DictionaryView(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'lecture/lecture11-1.html')
     def post(self, request: HttpRequest) -> HttpResponse:
         return redirect(redirect_page)

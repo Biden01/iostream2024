@@ -70,37 +70,73 @@
 {% endblock %}
 
 {% block text_content3 %}
+    <p>Кесіндінің үшінші параметрі range() функциясының үшінші параметріне қаншалықты ұқсас екеніне назар аударыңыз:</p>
+    <pre style="color: red">
+    s = 'abcdefghijklm'
+    print(s[0:10:2])
+    for i in range(0, 10, 2):
+        print(i, s[i])
+    </pre>
+
     <h1 id="h3">3. Методтар(Әдістер)</h1>
-    <p>Метод - бұл объектіге қолданылатын функция, бұл жағдайда жол. Метод объект.әдіс(параметрлер) түрінде шақырылады. Мысалы, S.find("e") - "e" бір параметрі бар S жолына табу әдісінің қолданылуы.</p>
+    <p>Метод - бұл объектіге қолданылатын функция, бұл жағдайда жол. Метод <code>объект.әдіс(параметрлер)</code> түрінде шақырылады. Мысалы, <code>S.find("e")</code> - <code>"e"</code> бір параметрі бар <code>S</code> жолына <code>find</code> әдісінің қолданылуы.</p>
 {% endblock %}
 
 {% block text_content4 %}
     <h1 id="h4">3.1. find және rfind методтары(әдістері).</h1>
-    <p>find методы берілген жолда берілген ішкі жолды (параметр ретінде жіберілетін) табады. Функция ізделетін ішкі жолдың бірінші пайда болуының индексін қайтарады. Ішкі жол табылмаса, метод -1 мәнін қайтарады.</p>
+    <p><code>find</code> методы берілген жолда берілген ішкі жолды (параметр ретінде жіберілетін) табады. Функция ізделетін ішкі жолдың бірінші пайда болуының индексін қайтарады. Ішкі жол табылмаса, метод -1 мәнін қайтарады.</p>
 {% endblock %}
 
 {% block text_content5 %}
-    <p>Сол сияқты, rfind методы берілген жолдың соңғы пайда болуының индексін қайтарады («іздеу оң жақ»).</p>
+    <p>Сол сияқты, <code>rfind</code> методы берілген жолдың соңғы пайда болуының индексін қайтарады («іздеу оң жақ»).</p>
 {% endblock %}
 
 {% block text_content6 %}
-    <p>Егер сіз S.find(T, a, b) үш параметрі бар табу методын шақырсаңыз, онда іздеу S[a:b] кесіндісінде орындалады. S.find(T, a) екі параметрін ғана көрсетсеңіз, онда іздеу S[a:] кесіндісінде, яғни a индексі бар символдан бастап жолдың соңына дейін жүргізіледі. S.find(T, a, b) әдісі кесіндіге қатысты индексті емес, S жолындағы индексті қайтарады.</p>
+    <p>Егер сіз <code>S.find(T, a, b)</code> үш параметрі бар табу методын шақырсаңыз, онда іздеу <code>S[a:b]</code> кесіндісінде орындалады. <code>S.find(T, a)</code> екі параметрін ғана көрсетсеңіз, онда іздеу <code>S[a:]</code> кесіндісінде, яғни <code>a</code> индексі бар символдан бастап жолдың соңына дейін жүргізіледі. <code>S.find(T, a, b)</code> әдісі кесіндіге қатысты индексті емес, <code>S</code> жолындағы индексті қайтарады.</p>
 {% endblock %}
 
 {% block text_content7 %}
     <h1 id="h5">3.2. replace(ауыстыру) методы</h1>
-    <p>replace(ауыстыру) методы бір жолдың таңдалған символының барлығын біз белгілеген символмен ауыстырады. Формат: S.replace(old, new, count) — old ішкі жолдың барлық қайталануларын S жолындағы new ішкі жолымен ауыстырыңыз. Мысалы:</p>
+    <p><code>replace(ауыстыру)</code> методы бір жолдың таңдалған символының барлығын біз белгілеген символмен ауыстырады. Формат: <code>S.replace(old, new, count)</code> — <code>old</code> ішкі жолдың барлық қайталануларын <code>S</code> жолындағы <code>new</code> ішкі жолымен ауыстырыңыз. Мысалы:</p>
 {% endblock %}
 
 {% block text_content8 %}
-    <p>Егер replace(ауыстыру) методына тағы бір параметр берілсе: S.replace(old, new, count), онда барлық символдар ауыстырылмайды, арнайы көрсеткен санға сәйкес алғашқылары ғана ауыстырылады.</p>
+    <p>Егер <code>replace(ауыстыру)</code> методына тағы бір параметр берілсе: <code>S.replace(old, new, count)</code>, онда барлық символдар ауыстырылмайды, арнайы көрсеткен санға сәйкес алғашқылары ғана ауыстырылады.</p>
 {% endblock %}
 
 {% block text_content9 %}
     <h1 id="h6">3.3. count(санау) методы</h1>
-    <p>Бір жолдың ішіндегі біз таңдаған символдың қайталану санын, қанша рет кездескенін санайды. S.count(T) шақыруының ең қарапайым түрі S жолындағы T жолының қайталануларының санын қайтарады.</p>
+    <p>Бір жолдың ішіндегі біз таңдаған символдың қайталану санын, қанша рет кездескенін санайды. <code>S.count(T)</code> шақыруының ең қарапайым түрі <code>S</code> жолындағы <code>T</code> жолының қайталануларының санын қайтарады.</p>
 {% endblock %}
 
 {% block text_content10 %}
-    <p>S.count(T, a, b) үш параметрін көрсетсеңіз, S[a:b] кесіндісіндегі T жолының қайталану саны есептеледі.</p>
+    <p><code>S.count(T, a, b)</code> үш параметрін көрсетсеңіз, <code>S[a:b]</code> кесіндісіндегі <code>T</code> жолының қайталану саны есептеледі.</p>
+{% endblock %}
+
+{% block trinket_url1 %}
+    <iframe src="https://trinket.io/embed/python/478c617e13" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+{% endblock %}
+
+{% block trinket_url2 %}
+    <iframe src="https://trinket.io/embed/python/f0a186e745" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+{% endblock %}
+
+{% block trinket_url4 %}
+    <iframe src="https://trinket.io/embed/python/ee1e502276" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+{% endblock %}
+
+{% block trinket_url5 %}
+    <iframe src="https://trinket.io/embed/python/a6cf86e27b" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+{% endblock %}
+
+{% block trinket_url7 %}
+    <iframe src="https://trinket.io/embed/python/f0dbe8b985" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+{% endblock %}
+
+{% block trinket_url8 %}
+    <iframe src="https://trinket.io/embed/python/9af31e65e5" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+{% endblock %}
+
+{% block trinket_url9 %}
+    <iframe src="https://trinket.io/embed/python/78cba20c0c" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 {% endblock %}

@@ -77,7 +77,7 @@ ol {
 }
 
 .block {
-    margin: 50px 0;
+    margin: 1px 0;
 }
 
 .con__high {
@@ -92,4 +92,20 @@ ol ol li {
 
 ol ol {
     border-left: 1px solid black;
+}
+
+code {
+    padding: .2rem .4rem;
+    font-size: 90%;
+    color: #bd4147;
+    background-color: #f7f7f9;
+    border-radius: .25rem;
+}
+
+.code {
+    padding: .2rem .4rem;
+    font-size: 90%;
+    color: #bd4147;
+    background-color: #f7f7f9;
+    border-radius: .25rem;
 }

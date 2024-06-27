@@ -4,6 +4,10 @@
     Есептеулер
 {% endblock %}
 
+{% block header %}
+    <h1>Есептеулер</h1>
+{% endblock %}
+
 {% block lecture_nav_3 %}
     <a href="#h1"><li>1. Бүтін сан арифметикасы</li></a>
     <a href="#h2"><li>2. Нақты сандар</li></a>
@@ -127,9 +131,20 @@
             <td>Константа π = 3,1415...</td>
         </tr>
     </table>
-    <style>
-        td, tr {
-            border: 1px solid black;
-        }
-    </style>
+{% endblock %}
+
+{% block trinket_url1 %}
+    <iframe src="https://trinket.io/embed/python/e89497308d" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+{% endblock %}
+
+{% block trinket_url2 %}
+    <iframe src="https://trinket.io/embed/python/1ffb7d14eb" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+{% endblock %}
+
+{% block trinket_url4 %}
+    <iframe src="https://trinket.io/embed/python/f83b9b701d" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+{% endblock %}
+
+{% block trinket_url5 %}
+    <iframe src="https://trinket.io/embed/python/af4a033250" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 {% endblock %}

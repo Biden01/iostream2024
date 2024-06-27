@@ -102,10 +102,13 @@
 
 {% block text_content16 %}
     <h1 id="h3">3. Рекурсия</h1>
-    <p>Жоғарыда көргеніміздей, функция басқа функцияны шақыра алады. Бірақ функция өзін шақыра алады! Мұны мысал ретінде факториал есептеу функциясын қолданып қарастырайық. 0!=1, 1!=1 болатыны белгілі. n мәнін қалай есептеу керек! үлкен n үшін? Егер біз (n-1)! мәнін есептей алатын болсақ, онда n!-ді оңай есептей аламыз, өйткені n!=n⋅(n-1)!. Бірақ қалай есептеу керек (n-1)!? (n-2)! есептесек, онда (n-1)!=(n-1)⋅(n-2)! де есептей аламыз!. (n-2) қалай есептеу керек!? Тек... Ақырында біз 1-ге тең 0! мәніне жетеміз. Сонымен факториалды есептеу үшін кішірек сан үшін факториал мәнін қолдануға болады. Мұны Python бағдарламасында да жасауға болады:</p>
 {% endblock %}
 
 {% block text_content17 %}
+    <p>Жоғарыда көргеніміздей, функция басқа функцияны шақыра алады. Бірақ функция өзін шақыра алады! Мұны мысал ретінде факториал есептеу функциясын қолданып қарастырайық. 0!=1, 1!=1 болатыны белгілі. n мәнін қалай есептеу керек! үлкен n үшін? Егер біз (n-1)! мәнін есептей алатын болсақ, онда n!-ді оңай есептей аламыз, өйткені n!=n⋅(n-1)!. Бірақ қалай есептеу керек (n-1)!? (n-2)! есептесек, онда (n-1)!=(n-1)⋅(n-2)! де есептей аламыз!. (n-2) қалай есептеу керек!? Тек... Ақырында біз 1-ге тең 0! мәніне жетеміз. Сонымен факториалды есептеу үшін кішірек сан үшін факториал мәнін қолдануға болады. Мұны Python бағдарламасында да жасауға болады:</p>
+{% endblock %}
+
+{% block text_content18 %}
     <p>Бұл әдіс (өзін шақыратын функция) рекурсия, ал функцияның өзі рекурсивті деп аталады.</p>
     <p>Рекурсивті функциялар программалаудағы қуатты механизм болып табылады. Өкінішке орай, олар әрқашан тиімді бола бермейді. Сондай-ақ, рекурсияны пайдалану жиі қателіктерге әкеледі. Бұл қателердің ең жиі кездесетіні шексіз рекурсия болып табылады, функционалдық шақырулар тізбегі ешқашан аяқталмайды және компьютердегі бос жад таусылғанша жалғасады. Шексіз рекурсияның мысалы осы бөлімнің эпиграфында келтірілген. Шексіз рекурсияның ең көп тараған екі себебі:</p>
     <ol style="margin-left: 40px">
@@ -135,7 +138,7 @@
     <iframe src="https://trinket.io/embed/python/feffcc5ed8" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 {% endblock %}
 
-{% block trinket_url6 %}
+{% block trinket_url7 %}
     <iframe src="https://trinket.io/embed/python/5ed30b2636" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 {% endblock %}
 
@@ -163,14 +166,14 @@
     <iframe src="https://trinket.io/embed/python/7673ab2f94" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 {% endblock %}
 
-{% block trinket_url14 %}
+{% block trinket_url16 %}
     <iframe src="https://trinket.io/embed/python/6de93170cc" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 {% endblock %}
 
-{% block trinket_url15 %}
+{% block trinket_url17 %}
     <iframe src="https://trinket.io/embed/python/15496602c2" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 {% endblock %}
 
-{% block trinket_url16 %}
+{% block trinket_url18 %}
     <iframe src="https://trinket.io/embed/python/53c6234810" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 {% endblock %}

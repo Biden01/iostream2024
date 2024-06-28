@@ -1,7 +1,6 @@
 from django.contrib.auth import authenticate, login
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render, redirect
-from djangoMainPage.models import Lecture
 from django.views import View
 
 redirect_page = 'main'
@@ -10,8 +9,7 @@ redirect_page = 'main'
 class LecturePageView(View):
     def get(self, request: HttpRequest) -> HttpResponse:
         context = {
-            'lecture': Lecture.objects.values_list(),
-            'user': request.user
+            'user': request.user,
         }
         return render(request=request, template_name="lecture/lecture.html", context=context)
 

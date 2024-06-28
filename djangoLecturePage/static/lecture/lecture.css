@@ -57,6 +57,7 @@ ol {
     border-radius: 3px;
     padding: 15px;
     font-size: 1rem;
+    font-weight: 300;
 }
 
 .section__left li:hover {

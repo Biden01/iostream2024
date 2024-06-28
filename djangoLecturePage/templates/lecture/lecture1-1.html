@@ -10,6 +10,18 @@
     <h1>Деректерді енгізу және шығару</h1>
 {% endblock %}
 
+{% block task_nav_1 %}
+    <p style="border-radius: 2px; background: rgba(10,9,9,0.22); padding: 5px; margin-bottom: 0">Есептер</p>
+    <a href="{% url 'print_input1' %}"><li>Үш санның қосындысы</li></a>
+    <a href="{% url 'print_input2' %}"><li>Тікбұрышты үшбұрыштың ауданы</li></a>
+    <a href="{% url 'print_input3' %}"><li>Алманы бөлу</li></a>
+    <a href="{% url 'print_input4' %}"><li>Электронды сағат</li></a>
+    <a href="{% url 'print_input5' %}"><li>Hello Harry!</li></a>
+    <a href="{% url 'print_input6' %}"><li>Келесі және алдыңғы</li></a>
+    <a href="{% url 'print_input7' %}"><li>Үстелдер</li></a>
+    <a href="{% url 'print_input8' %}"><li>Аяқ-киім бауы</li></a>
+{% endblock %}
+
 {% block text_content1 %}
     <p>Python — қазіргі таңдағы ең танымал бағдарламалау тілдерінің бірі. Python тілін 1991 жылы Гидо ван Россум жазып шығарған. Python тілі келесі мақсаттарда кеңінен қолданылады:</p>
     <ul>

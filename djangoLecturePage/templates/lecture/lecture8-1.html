@@ -8,6 +8,16 @@
     <h1>Функциялар және рекурсия</h1>
 {% endblock %}
 
+{% block task_nav_8 %}
+    <p style="border-radius: 2px; background: rgba(10,9,9,0.22); padding: 5px; margin-bottom: 0">Есептер</p>
+    <a href="{% url 'function1' %}"><li>Кесіндінің ұзындығы</li></a>
+    <a href="{% url 'function2' %}"><li>Теріс дәреже</li></a>
+    <a href="{% url 'function3' %}"><li>Үлкен әріптер</li></a>
+    <a href="{% url 'function4' %}"><li>Дәрежеге шығарут</li></a>
+    <a href="{% url 'function5' %}"><li>ретін өзгерту</li></a>
+    <a href="{% url 'function6' %}"><li>Фибоначчи сандары</li></a>
+{% endblock %}
+
 {% block lecture_nav_8 %}
     <a href="#h1"><li>1. Функциялар</li></a>
     <a href="#h2"><li>2. Локальді және глобальды айнымалылар</li></a>

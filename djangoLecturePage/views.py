@@ -737,6 +737,78 @@ class List7View(View):
         return redirect(redirect_page)
 
 
+class List8View(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'task/task7/task7-8.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class List9View(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'task/task7/task7-9.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class List10View(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'task/task7/task7-10.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class List11View(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'task/task7/task7-11.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class List12View(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'task/task7/task7-12.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class List13View(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'task/task7/task7-13.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class List14View(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'task/task7/task7-14.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class List15View(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'task/task7/task7-15.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
+class List16View(View):
+    def get(self, request: HttpRequest) -> HttpResponse:
+        return render(request, 'task/task7/task7-16.html')
+
+    def post(self, request: HttpRequest) -> HttpResponse:
+        return redirect(redirect_page)
+
+
 class FunctionView(View):
     def get(self, request: HttpRequest) -> HttpResponse:
         return render(request, 'lecture/lecture8-1.html')

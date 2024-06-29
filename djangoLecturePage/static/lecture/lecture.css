@@ -109,3 +109,28 @@ code {
     background-color: #f7f7f9;
     border-radius: .25rem;
 }
+
+#code {
+         width: 100%;
+         float:left;
+         min-height:100px;
+         overflow: hidden;
+     }
+
+summary {
+    /* Стили для заголовка */
+    color: #39739d;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+details {
+    /* Стили для области, которая раскрывается */
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+details[open] {
+    max-height: 100px; /* Высота, на которую раскрывается текст */
+}

@@ -1,5 +1,7 @@
 {% extends 'task/task1/task1.html' %}
 
+{% load static %}
+
 {% block title %}
     Деректерді енгізу және шығару
 {% endblock %}
@@ -10,5 +12,9 @@
     <p>Шарт:</p>
     <p>Үш санды оқитын және олардың қосындысын басып шығаратын программа жазыңыз. Әрбір сан бөлек жолға жазылады.</p>
     <p>Барлық тапсырмаларда input() арқылы енгізуді оқыңыз және print() арқылы жауапты шығарыңыз.</p>
-    textarea
+    <div id="code">print("Hello world!")</div>
+    <details>
+        <summary>Компилятор</summary>
+        <iframe height="450px" src="https://onecompiler.com/embed/python/42hnesw22?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
+    </details>
 {% endblock %}

@@ -32,8 +32,7 @@ var code;
 
 $(function() {
     code = ace.edit("code");                      // создаем редактор из элемента с id="code"
-    code.getSession().setMode("ace/mode/html");   // говорим что код надо подсвечивать как Python код
-    code.setTheme("ace/theme/monokai");          // выбираем тему оформления для подсветки синтаксиса
+    code.getSession().setMode("ace/mode/python");   // говорим что код надо подсвечивать как Python код
     code.getSession().setUseWorker(true);
     code.setHighlightActiveLine(true); // Включите подсветку активной строки
     code.setShowPrintMargin(true);               // опционально: убираем вертикальную границу в 80 сиволов

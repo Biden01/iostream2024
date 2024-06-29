@@ -119,7 +119,7 @@ code {
 
 summary {
     /* Стили для заголовка */
-    color: #39739d;
+    color: #3778AF;
     font-weight: normal;
     cursor: pointer;
 }
@@ -127,10 +127,20 @@ summary {
 details {
     /* Стили для области, которая раскрывается */
     max-height: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     transition: 0.4s;
 }
 
 details[open] {
-    max-height: 100px; /* Высота, на которую раскрывается текст */
+    max-height: 450px; /* Высота, на которую раскрывается текст */
+}
+
+button {
+    padding: .75rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
+    margin: 20px 0;
 }

@@ -31,7 +31,7 @@ window.onload = function () {
 var code;
 
 $(function() {
-    code = ace.edit("code");                      // создаем редактор из элемента с id="code"
+    code = ace.edit("editor");                      // создаем редактор из элемента с id="code"
     code.getSession().setMode("ace/mode/python");   // говорим что код надо подсвечивать как Python код
     code.getSession().setUseWorker(true);
     code.setHighlightActiveLine(true); // Включите подсветку активной строки
@@ -42,3 +42,26 @@ $(function() {
 });
     code.$blockScrolling = Infinity;              // отключаем устаревшие, не поддерживаемые фишки редактора
 });
+
+// function main() {
+//     let code_text = code.getValue();
+//     console.log(code_text);
+// }
+//
+// function runit() {
+//     var prog = code.getValue();
+//     var mypre = document.getElementById("output");
+//     Sk.configure({
+//         output: function (text) {
+//             mypre.innerHTML += text;
+//         },
+//         read: function (x) {
+//             if (Sk.builtinFiles === undefined || Sk.builtinFiles["files"][x] === undefined)
+//                 throw "File not found: '" + x + "'";
+//             return Sk.builtinFiles["files"][x];
+//         }
+//     });
+//     Sk.misceval.asyncToPromise(function () {
+//         return Sk.importMainWithBody("<stdin>", false, prog, true);
+//     });
+// }

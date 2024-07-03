@@ -1,11 +1,11 @@
 {% extends 'lecture/lecture.html' %}
-
+{% load static %}
 {% block title %}
     Жолдар(Мәтіндік тип)
 {% endblock %}
 
 {% block header %}
-    <h1>Жолдар(Мәтіндік тип)</h1>
+
 {% endblock %}
 
 {% block task_nav_5 %}
@@ -80,12 +80,13 @@
     <p>Екі параметрі бар кесінді: <code>S[a:b]</code> <code>a</code> индексіндегі таңбадан басталатын <code>b</code> индексіндегі таңбаға дейін, бірақ соңы ретінде көрсетілген символ қосылмайды. Мысалы, <code>S[1:4] == 'ell'</code>, <code>S[-4:-1]</code> деп жазсаңыз, дәл солай болады. Бір кесіндіде оң және теріс индекстерді де пайдалануға болады, мысалы, <code>S[1:-1]</code> – бірінші және соңғы таңбасыз жол (кесінді 1-декстегі таңбадан басталып, -1 индексінде емес оның ішінде).</p>
     <p>Бұл кесу пішімін пайдаланған кезде <code>IndexError</code> ешқашан пайда болмайды. Мысалы, <code>S[1:5]</code> кесіндісі <code>'ello'</code> жолын қайтарады, егер сіз екінші индексті өте үлкен етіп жасасаңыз, нәтиже бірдей болады, мысалы, <code>S[1:100]</code> (егер жолда 100 таңбадан артық болмаса).</p>
     <p>Екінші параметрді өткізіп жіберсеңіз (бірақ қос нүкте қойсаңыз), онда кесінді жолдың соңына дейін алынады. Мысалы, жолдан бірінші таңбаны жою үшін (оның индексі 0) <code>S[1:]</code> кесіндісін алуға болады. Сол сияқты, бірінші параметрді өткізіп жіберсеңіз, жолдың басынан бір бөлікті алуға болады. Яғни, <code>S[:-1]</code> кесіндісінің көмегімен жолдан соңғы таңбаны жоюға болады. <code>S[:]</code> тілігі <code>S</code> жолының өзіне сәйкес келеді.</p>
-    <p>Жолдағы кез келген кесу операциясы жаңа жолдарды жасайды және ешқашан бастапқы жолды өзгертпейді. Python-да жолдар әдетте өзгермейді және оларды өзгерту мүмкін емес. Ескі айнымалыға жаңа жолды меншіктей аласыз.</p>
-    <p><code>S[a:b:d]</code> үш параметрі бар кесінді көрсетсеңіз, онда үшінші параметр <code>range()</code> функциясындағыдай қадамды анықтайды, яғни <code>a</code>, <code>a + d</code>, <code>a + 2 * d</code> және т.б. қабылданады Егер үшінші параметрдің мәнін 2-ге орнатсаңыз, әрбір екінші таңба кесіндіге қосылады, ал кесіндінің мәнін <code>-1</code> мәніне орнатсаңыз, онда таңбалар керісінше жүреді.</p>
-    <p>Мысалы, <code>S[::-1]</code> тілімімен жолды кері айналдыруға болады.</p>
+
 {% endblock %}
 
 {% block text_content3 %}
+<p>Жолдағы кез келген кесу операциясы жаңа жолдарды жасайды және ешқашан бастапқы жолды өзгертпейді. Python-да жолдар әдетте өзгермейді және оларды өзгерту мүмкін емес. Ескі айнымалыға жаңа жолды меншіктей аласыз.</p>
+    <p><code>S[a:b:d]</code> үш параметрі бар кесінді көрсетсеңіз, онда үшінші параметр <code>range()</code> функциясындағыдай қадамды анықтайды, яғни <code>a</code>, <code>a + d</code>, <code>a + 2 * d</code> және т.б. қабылданады Егер үшінші параметрдің мәнін 2-ге орнатсаңыз, әрбір екінші таңба кесіндіге қосылады, ал кесіндінің мәнін <code>-1</code> мәніне орнатсаңыз, онда таңбалар керісінше жүреді.</p>
+    <p>Мысалы, <code>S[::-1]</code> тілімімен жолды кері айналдыруға болады.</p>
     <p>Кесіндінің үшінші параметрі range() функциясының үшінші параметріне қаншалықты ұқсас екеніне назар аударыңыз:</p>
     <pre style="color: red">
     s = 'abcdefghijklm'
@@ -155,4 +156,39 @@
 
 {% block trinket_url9 %}
     <iframe height="450px" src="https://onecompiler.com/embed/python/42hjsx768?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
+{% endblock %}
+
+{% block video1 %}
+<br><br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/str/ministr-sabak-1.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video2 %}
+<br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/str/ministr-sabak-2.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+<br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/str/ministr-sabak-3.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+<br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/str/ministr-sabak-4.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+{% block video5 %}
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/str/ministr-sabak-5.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video8 %}
+<br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/str/ministr-sabak-6.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
 {% endblock %}

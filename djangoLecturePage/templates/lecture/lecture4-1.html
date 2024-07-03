@@ -1,11 +1,11 @@
 {% extends 'lecture/lecture.html' %}
-
+{% load static %}
 {% block title %}
     for циклі
 {% endblock %}
 
 {% block header %}
-    <h1>for циклі</h1>
+
 {% endblock %}
 
 {% block task_nav_4 %}
@@ -36,12 +36,11 @@
 {% endblock %}
 
 {% block text_content2 %}
+<br><br><br><br>
     <p>Бұл мысалда <code>color</code> айнымалысы <code>«red»</code>, <code>«orange»</code> және т.б. мәндерін ретімен қабылдайды. Циклдің негізгі бөлігінде түс атауын, яғни <code>color</code> айнымалысының мәнін, сондай-ақ цикл итерациясының нөмірін, алдымен 1-ге тең, содан кейін бірге көбейтетін санды қамтитын хабарлама көрсетіледі. (циклдің әрбір өтуімен <code>i += 1</code> нұсқауымен.</p>
     <p><code>i += 1</code> нұсқауы <code>i = i + 1</code> конструкциясына баламалы (бұл жай ғана стенографиялық белгі). Бұл стенографиялық белгілерді барлық арифметикалық амалдар үшін қолдануға болады: <code>*=</code>, <code>-=</code>, <code>/=</code>, <code>%=</code>...</p>
     <p>Мәндер тізімі әртүрлі түрдегі өрнектерді қамтуы мүмкін, мысалы:</p>
-{% endblock %}
 
-{% block text_content3 %}
     <p>Циклдің алғашқы үш итерациясында <code>i</code> айнымалысы <code>int</code> түріндегі мәнді қабылдайды, келесі үш кезеңде ол <code>str</code> түріндегі мәнді қабылдайды.</p>
 {% endblock %}
 
@@ -85,4 +84,41 @@
 
 {% block trinket_url7 %}
     <iframe height="450px" src="https://onecompiler.com/embed/python/42hjsbyq4?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
+{% endblock %}
+
+{% block video1 %}
+<br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/for/minifor-loop=1.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video2 %}
+    <video id="player" controls>
+      <source src="{% static 'video/for/minifor-loop=2.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/for/minifor-loop=3.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video4 %}
+<br><br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/for/minifor-loop=4.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+{% block video5 %}
+<br><br><br><br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/for/minifor-loop=5.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video7 %}
+<br><br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/for/minifor-loop=6.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
 {% endblock %}

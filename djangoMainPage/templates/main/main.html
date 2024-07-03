@@ -13,7 +13,7 @@
     {% if user.is_authenticated %}
 {#        <h5>{{ user.username }}</h5>#}
         <form method="post">
-{#            <button type="button" class="btn btn-outline-primary"><a href="{% url 'logout' %}">logout</a></button>#}
+            <button type="button" class="btn btn-outline-primary"><a href="{% url 'logout' %}">logout</a></button>
         </form>
     {% else %}
         <a href="#" id="myBtn"><li>Кіру/Тіркелу</li></a>
@@ -27,25 +27,5 @@
         Тікелей браузерде жұмыс істейтін онлайн-оқулық.</p>
     <a href="{% url "print_input" %}" class="button">БАСТАУ</a>
     <iframe height="450px" class="container" src="https://onecompiler.com/embed/python/42hs57e32?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
-</section>
-<section>
-{#    <h1 class="container" id="first">Платформа артықшылықтары</h1>#}
-    <div class="blocks container">
-        <div class="block">
-            <h1>БАСТАУ ОҢАЙ</h1>
-            <p><i>Платформа браузерден жұмыс істейді. Анрайы редактор, программаларды орнату туралы алаңдамаңыз.</i></p>
-        </div>
-        <div class="block">
-            <h1>ҚАЗАҚ ТІЛІНДЕ</h1>
-            <p><i>Біздің қадамдық компилятор қате туралы хабарламаларды қазақ тіліне аударады және оларды түсіндіреді.</i></p>
-        </div>
-        <div class="block">
-            <h1>ӘР ТҮРЛІ</h1>
-            <p><i>Әр түрлі қиындықтағы жүзден астам тапсырмалар.
-                Олардың әртүрлі басқа да шешімдерді көрсетеміз.</i></p>
-        </div>
-    </div>
-    <br>
-    <a href="{% url "lecture" %}" class="button2">БАСТАУ</a>
 </section>
 {% endblock %}

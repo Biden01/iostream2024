@@ -1,9 +1,17 @@
 {% extends 'task/task2/task2.html' %}
-
+{% load static %}
 {% block text_content1 %}
-    <h1>6. «Қанша сан сәйкес келеді» тапсырмасы</h1>
-    <p>Шарт</p>
+    <h1>6. «Қанша сан сәйкес келеді» </h1>
+
     <p>Үш бүтін сан берілген. Олардың қаншасы сәйкес келетінін анықтаңыз. Бағдарлама сандардың бірін шығаруы керек: 3 (барлық сандар бірдей болса), 2 (егер екеуі бірдей болса) немесе 0 (егер барлық сандар әртүрлі болса).</p>
     <p>Барлық тапсырмаларда input() арқылы енгізуді оқыңыз және print() арқылы жауапты шығарыңыз.</p>
 <iframe height="450px" src="https://onecompiler.com/embed/python/42hnesw22?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
+{% endblock %}
+{% block video1 %}
+<br>
+<br>
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/if else esepter/miniesepter 2 if else=5.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
 {% endblock %}

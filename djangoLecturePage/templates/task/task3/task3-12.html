@@ -1,8 +1,16 @@
 {% extends 'task/task3/task3.html' %}
-
+{% load static %}
 {% block text_content1 %}
-    <h1>12.	«Гипотенуза» тапсырмасы</h1>
-    <p>Шарт</p>
+    <h1>12.	«Гипотенуза» </h1>
+
     <p>a және b екі саны берілген. Берілген катеттері бар үшбұрыштың гипотенузасын басып шығар.</p>
     <p>Барлық тапсырмаларда input() арқылы енгізуді оқыңыз және print() арқылы жауапты шығарыңыз.</p>
 <iframe height="450px" src="https://onecompiler.com/embed/python/42hnesw22?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>{% endblock %}
+{% block video1 %}
+<br>
+<br>
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/esepteuler-esep/miniesepteuler-esep-12.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}

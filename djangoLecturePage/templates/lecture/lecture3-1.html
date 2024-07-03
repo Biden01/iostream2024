@@ -1,5 +1,5 @@
 {% extends 'lecture/lecture.html' %}
-
+{% load static %}
 {% block title %}
     Есептеулер
 {% endblock %}
@@ -41,12 +41,11 @@
 {% endblock %}
 
 {% block text_content2 %}
+<br><br><br>
     <h1 id="h2">2. Нақты сандар</h1>
     <p>Бұл бөлімде <code>float</code> типінің нақты сандарына назар аударамыз.</p>
     <p>Нақты санды пернетақтадан оқығыңыз келсе, <code>input()</code> функциясы қайтаратын нәтиже <code>float</code> типіне түрлендіру керек екенін ескеріңіз:</p>
-{% endblock %}
 
-{% block text_content3 %}
     <p>Еске салайық, бөлу операциясының нәтижесі <code>/</code> әрқашан нақты сан (<code>float</code>), ал <code>//</code> операциясының нәтижесі бүтін (<code>int</code>) болады.</p>
     <p>Нақты сандарды бүтін санға айналдыру нөлге қарай дөңгелектеу арқылы жүзеге асырылады, яғни <code>int(1.7) == 1</code>, <code>int(-1.7) == -1</code>.</p>
 {% endblock %}
@@ -168,3 +167,36 @@
 {% block trinket_url5 %}
     <iframe height="450px" src="https://onecompiler.com/embed/python/42hjrz7cb?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
 {% endblock %}
+
+{% block video1 %}
+<br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/esep/miniesepteuler_portal=1.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+
+
+{% endblock %}
+
+{% block video2 %}
+
+<video id="player" controls>
+      <source src="{% static 'video/esep/miniesepteuler_portal=2.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/esep/miniesepteuler_portal=3.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video4 %}
+    <video id="player" controls>
+      <source src="{% static 'video/esep/miniesepteuler_portal=4.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video5 %}
+    <video id="player" controls>
+      <source src="{% static 'video/esep/miniesepteuler_portal=5.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+

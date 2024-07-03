@@ -9,8 +9,8 @@
 {% block text_content1 %}
     <script src="{% static 'lecture/skulpt/skulpt.js' %}"></script>
     <script src="{% static 'lecture/skulpt/skulpt-stdlib.js' %}"></script>
-    <h1>1. «Үш санның қосындысы» тапсырмасы</h1>
-    <p>Шарт:</p>
+    <h1>1. «Үш санның қосындысы» </h1>
+
     <p>Үш санды оқитын және олардың қосындысын басып шығаратын программа жазыңыз. Әрбір сан бөлек жолға жазылады.</p>
     <p>Барлық тапсырмаларда input() арқылы енгізуді оқыңыз және print() арқылы жауапты шығарыңыз.</p>
 <!--    <div id="editor"># Бұл бағдарлама екі санды оқиды және олардың қосындысын басып шығарады:-->
@@ -28,3 +28,12 @@
 <iframe height="450px" src="https://onecompiler.com/embed/python/42hnesw22?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
 <!--    </details>-->
 {% endblock %}
+{% block video1 %}
+<br>
+<br>
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/esepter1/miniesepter1-1.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+

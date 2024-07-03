@@ -23,13 +23,7 @@
 {% endblock %}
 
 {% block text_content1 %}
-    <p>Python — қазіргі таңдағы ең танымал бағдарламалау тілдерінің бірі. Python тілін 1991 жылы Гидо ван Россум жазып шығарған. Python тілі келесі мақсаттарда кеңінен қолданылады:</p>
-    <ul>
-        <li>веб-әзірлеу (сервер жағында)</li>
-        <li>бағдарламалық қамтамасыз ету</li>
-        <li>математика</li>
-        <li>тағы басқа</li>
-    </ul>
+
     <p>Мәндерді басып шығару үшін Python-да <code>print()</code> функциясы бар. Жақшаның ішіне үтірмен бөліп, біз шығарғымыз келетін объектілерді жазамыз. Міне, бірнеше есептеулер жасайтын бағдарлама:</p>
 {% endblock %}
 
@@ -39,7 +33,7 @@
 {% endblock %}
 
 {% block text_content3 %}
-    <p>Біз деректерді оқитын, өңдейтін және кейбір нәтиже шығаратын бағдарламалар жазамыз. Компьютерде іске қосылған кезде мұндай бағдарламаларпайдаланушы пернетақтадан енгізген мәліметтерді оқиды және нәтижені экранда көрсетеді.</p>
+    <p>Біз деректерді оқитын, өңдейтін және кейбір нәтиже шығаратын бағдарламалар жазамыз. Компьютерде іске қосылған кезде мұндай бағдарламалар пайдаланушы пернетақтадан енгізген мәліметтерді оқиды және нәтижені экранда көрсетеді.</p>
     <p>Екі санды оқитын және олардың қосындысын көрсететін программа жазып көрейік. Ол үшін <code>=</code> меншіктеу(тағайындау) операторы арқылы екі санды санап, оларды <code>a</code> және <code>b</code> айнымалыларында сақтаймыз. Python бағдарламаларындағы меншіктеу(тағайындау) операторының сол жағында айнымалының аты орналасқан – мысалы, латын әріптерінің тізбегі. Кез келген өрнекті меншіктеу(тағайындау) операторының оң жағына қоюға болады. Атау өрнекті бағалау нәтижесін көрсетеді. Төмендегі бағдарламанының нәтижелелерін қараңыз:</p>
 {% endblock %}
 
@@ -56,7 +50,7 @@
 {% endblock %}
 
 {% block trinket_url1 %}
-    <iframe height="450px" src="https://onecompiler.com/embed/python/42hjnqj8n?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
+    <iframe height="350px" src="https://onecompiler.com/embed/python/42hjnqj8n?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
 {% endblock %}
 
 {#{% block trinket_url2 %}#}
@@ -64,7 +58,7 @@
 {#{% endblock %}#}
 
 {% block trinket_url2 %}
-    <iframe height="350px" src="https://onecompiler.com/embed/python/42hjpctfb?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
+    <iframe height="450px" src="https://onecompiler.com/embed/python/42hjpctfb?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
 {% endblock %}
 
 {% block trinket_url3 %}
@@ -81,25 +75,28 @@
 
 {% block video1 %}
     <video id="player" controls>
-      <source src="{% static 'video/input-3.mp4' %}" class="video-link" type="video/mp4" />
+      <source src="{% static 'video/1/input-1.mp4' %}" class="video-link" type="video/mp4" />
     </video>
 {% endblock %}
 
 {% block video2 %}
+<br>
     <video id="player" controls>
-      <source src="{% static 'video/input-2.mp4' %}" class="video-link" type="video/mp4" />
+      <source src="{% static 'video/1/input-2.mp4' %}" class="video-link" type="video/mp4" />
     </video>
 {% endblock %}
 
 {% block video3 %}
+<br><br><br>
     <video id="player" controls>
-      <source src="{% static 'video/input-1.mp4' %}" class="video-link" type="video/mp4" />
+      <source src="{% static 'video/1/input-3.mp4' %}" class="video-link" type="video/mp4" />
     </video>
 {% endblock %}
 
 {% block video4 %}
+<br><br><br><br><br><br>
     <video id="player" controls>
-      <source src="{% static 'video/input-4.mp4' %}" class="video-link" type="video/mp4" />
+      <source src="{% static 'video/1/input-4.mp4' %}" class="video-link" type="video/mp4" />
     </video>
 {% endblock %}
 

@@ -1,8 +1,16 @@
 {% extends 'task/task3/task3.html' %}
-
+{% load static %}
 {% block text_content1 %}
-    <h1>3. «Бөлшек бөлігі» тапсырмасы</h1>
-    <p>Шарт</p>
+    <h1>3. «Бөлшек бөлігі» </h1>
+
     <p>Берілген оң нақты X саны. Оның бөлшек бөлігін басып шығарыңыз.</p>
     <p>Барлық тапсырмаларда input() арқылы енгізуді оқыңыз және print() арқылы жауапты шығарыңыз.</p>
 <iframe height="450px" src="https://onecompiler.com/embed/python/42hnesw22?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>{% endblock %}
+{% block video1 %}
+<br>
+<br>
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/esepteuler-esep/miniesepteuler-esep-3.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}

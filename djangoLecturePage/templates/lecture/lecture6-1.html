@@ -1,11 +1,11 @@
 {% extends 'lecture/lecture.html' %}
-
+{% load static %}
 {% block title %}
     While циклі
 {% endblock %}
 
 {% block header %}
-    <h1>While циклі</h1>
+
 {% endblock %}
 
 {% block task_nav_6 %}
@@ -81,11 +81,11 @@ while шарт:
 {% endblock %}
 
 {% block text_content9 %}
-    <p>Бұл циклды келесідей қайта жазу әлдеқайда жақсы:</p>
+    <p>Бұл циклды келесідей қайта жазу әлдеқайда жақсы:_______________________________________________________________________________.</p>
 {% endblock %}
 
 {% block text_content10 %}
-    <p>Дегенмен, Python-да неғұрлым талғампаз шешім ұсынылуы мүмкін:</p>
+    <p>Дегенмен, Python-да неғұрлым талғампаз шешім ұсынылуы мүмкін:_____________________________________________________________.</p>
 {% endblock %}
 
 {% block text_content11 %}
@@ -100,7 +100,7 @@ while шарт:
 {% endblock %}
 
 {% block text_content12 %}
-    <p>Python-да бірдей әрекет бір жолда жазылады:</p>
+    <p>Python-да бірдей әрекет бір жолда жазылады:_____________________________________________.</p>
 {% endblock %}
 
 {% block trinket_url1 %}
@@ -145,4 +145,48 @@ while шарт:
 
 {% block trinket_url12 %}
     <iframe height="450px" src="https://onecompiler.com/embed/python/42hjtznjc?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
+{% endblock %}
+
+{% block video1 %}
+<br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/while/miniwhile-sabak-1.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/while/miniwhile-sabak-2.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video2 %}
+<br><br><br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/while/miniwhile-sabak-3.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video4 %}
+<br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/while/miniwhile-sabak-4.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+{% block video5 %}
+<br><br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/while/miniwhile-sabak-5.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video7 %}
+<br><br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/while/miniwhile-sabak-6.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video12 %}
+    <video id="player" controls>
+      <source src="{% static 'video/while/miniwhile-sabak-7.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
 {% endblock %}

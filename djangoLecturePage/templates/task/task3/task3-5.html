@@ -1,10 +1,18 @@
 {% extends 'task/task3/task3.html' %}
-
+{% load static %}
 {% block text_content1 %}
-    <h1>5. «Сабақ соңы» тапсырмасы</h1>
-    <p>Шарт</p>
+    <h1>5. «Сабақ соңы» </h1>
+
     <p>Кейбір мектептерде сабақ сағат 9:00-де басталады. Сабақтың ұзақтығы - 45 минут, 1, 3, 5 және т.б. сабақтарда 5 минуттық үзіліс, ал 2, 4, 6 және т.б. - 15 минут.</p>
     <p>Сабақтың нөмірі беріледі (1-ден 10-ға дейінгі сан). Көрсетілген сабақтың қашан аяқталатынын анықтаңыз.</p>
     <p>Екі бүтін санды басып шығарыңыз: сабақтың аяқталу уақыты сағат пен минутта.</p>
     <p>Барлық тапсырмаларда input() арқылы енгізуді оқыңыз және print() арқылы жауапты шығарыңыз.</p>
 <iframe height="450px" src="https://onecompiler.com/embed/python/42hnesw22?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>{% endblock %}
+{% block video1 %}
+<br>
+<br>
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/esepteuler-esep/miniesepteuler-esep-5.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}

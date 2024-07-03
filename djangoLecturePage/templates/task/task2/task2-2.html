@@ -1,8 +1,8 @@
 {% extends 'task/task2/task2.html' %}
-
+{% load static %}
 {% block text_content1 %}
-    <h1>2. «Сан белгісі» тапсырмасы</h1>
-    <p>Шарт</p>
+    <h1>2. «Сан белгісі» </h1>
+
     <p>Математикада функцияның sign(x) (санның таңбасы) келесідей анықталады:</p>
     <p>sign (x) = 1, егер x > 0 болса,</p>
     <p>sign (x) = -1, егер x < 0 болса,</p>
@@ -10,4 +10,12 @@
     <p>Берілген x саны үшін sign(x) мән белгісін басып шығарыңыз. Бұл мәселені каскадты if... elif... else инструкциялары арқылы шешкен жөн.</p>
     <p>Барлық тапсырмаларда input() арқылы енгізуді оқыңыз және print() арқылы жауапты шығарыңыз.</p>
 <iframe height="450px" src="https://onecompiler.com/embed/python/42hnesw22?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
+{% endblock %}
+{% block video1 %}
+<br>
+<br>
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/if else esepter/miniesepter 2 if else=2.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
 {% endblock %}

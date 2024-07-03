@@ -1,5 +1,5 @@
 {% extends 'lecture/lecture.html' %}
-
+{% load static %}
 {% block title %}
     Тізімдер немесе Массивтер
 {% endblock %}
@@ -81,39 +81,39 @@
 
 {% block text_content8 %}
     <p>Мұнда <code>i</code> элементінің индексі циклде өзгертіледі, содан кейін <code>i</code> индексі бар тізім элементі көрсетіледі.</p>
+ <p>Бұл мысалда тізім элементтері бос орынмен бөлінген бір жолда көрсетіледі, ал циклде тізім элементінің индексі емес, айнымалының өзі өзгереді (мысалы, <code>for elem in ['red', 'green', 'blue']</code> <code>elem</code> айнымалы ретімен <code>'red'</code>, <code>'green'</code>, <code>'blue'</code> мәндерін қабылдайды.</p>
+    <p>Соңғы мысалға ерекше назар аударыңыз! Python идеологиясының өте маңызды бөлігі - тізбектің барлық элементтерін қайталаудың ыңғайлы әдісін қамтамасыз ететін <code>for</code> циклі. Бұл Python мен Паскаль арасындағы айырмашылық, Python-да элементтердің өзін теруге мүмкіндік бар.</p>
+<p>Жолдан барлық сандарды таңдап, оларды массивке сандар ретінде қосу қажет жағдайда <code>for</code> циклін қолдануды көрсететін мысал келтірейік.</p>
 {% endblock %}
+
+
 
 {% block text_content9 %}
-    <p>Бұл мысалда тізім элементтері бос орынмен бөлінген бір жолда көрсетіледі, ал циклде тізім элементінің индексі емес, айнымалының өзі өзгереді (мысалы, <code>for elem in ['red', 'green', 'blue']</code> <code>elem</code> айнымалы ретімен <code>'red'</code>, <code>'green'</code>, <code>'blue'</code> мәндерін қабылдайды.</p>
-    <p>Соңғы мысалға ерекше назар аударыңыз! Python идеологиясының өте маңызды бөлігі - тізбектің барлық элементтерін қайталаудың ыңғайлы әдісін қамтамасыз ететін <code>for</code> циклі. Бұл Python мен Паскаль арасындағы айырмашылық, Python-да элементтердің өзін теруге мүмкіндік бар.</p>
-    <p>Жолдан барлық сандарды таңдап, оларды массивке сандар ретінде қосу қажет жағдайда <code>for</code> циклін қолдануды көрсететін мысал келтірейік.</p>
-{% endblock %}
-
-{% block text_content10 %}
     <h1 id="h2">2. split(бөлу) және join(біріктіру) әдістері</h1>
     <p>Тізім элементтерін бір жолға енгізуге болады, бұл жағдайда бүкіл жолды <code>input()</code>>функциясы ретінде қарастыруға болады. Содан кейін жолдың <code>split()</code> әдісін қолдануға болады, ол бастапқы жол бос орынға бөліктерге бөлінген жағдайда алынатын жолдар тізімін қайтарады. Мысалы:</p>
 {% endblock %}
 
-{% block text_content11 %}
+{% block text_content10 %}
     <p>Бұл бағдарламаны іске қосу кезінде <code>1 2 3</code> жолын енгізсеңіз, онда <code>а</code> тізімі <code>['1', '2', '3']</code> тең болады. Тізім сандардан емес, жолдардан тұратынын ескеріңіз. Егер сандар тізімін алғыңыз келсе, тізімнің элементтерін бір-бірден сандарға түрлендіруге болады:</p>
 {% endblock %}
 
-{% block text_content12 %}
+{% block text_content11 %}
     <p>Арнайы Python магиясын - генераторларды пайдалану - дәл сол нәрсені бір жолда жасауға болады:</p>
 {% endblock %}
 
-{% block text_content13 %}
+{% block text_content12 %}
     <p>Бұл кодтың қалай жұмыс істейтіні келесі бөлімде түсіндіріледі. Егер нақты сандар тізімін оқу қажет болса, онда int түрін <code>float</code> түрімен ауыстыру керек.</p>
     <p><code>split()</code> әдісінде тізім элементтері арасында бөлгіш ретінде қолданылатын жолды көрсететін қосымша параметр бар. Мысалы, <code>split('.')</code> функциясын шақыру бастапқы жолды <code>'.'</code> таңбаларына бөлу арқылы алынған тізімді қайтарады:</p>
 {% endblock %}
 
 {% block text_content14 %}
     <p>Python тілінде бір жолды пәрмен арқылы жолдарды тізімдей аласыз. Ол үшін жолды <code>join</code> әдісі пайдаланылады. Бұл әдістің бір параметрі бар: жолдар тізімі. Нәтижесінде, берілген тізімнің элементтерін бір жолға біріктіру арқылы алынған жол қайтарылады, ал тізім элементтері арасына әдіс қолданылатын жолға тең бөлгіш енгізіледі. Алдыңғы сөйлемді бірінші рет түсінбегеніңізді білеміз. Сондықтан мысалдарды қараңыз:</p>
+<p>Егер тізім сандардан тұрса, онда генераторлардың қара сиқырын қолдануға тура келеді. Сандар тізімінің элементтерін бос орындармен бөліп көрсетуге болады, мысалы:</p>
+
 {% endblock %}
 
 {% block text_content15 %}
-    <p>Егер тізім сандардан тұрса, онда генераторлардың қара сиқырын қолдануға тура келеді. Сандар тізімінің элементтерін бос орындармен бөліп көрсетуге болады, мысалы:</p>
-{% endblock %}
+    {% endblock %}
 
 {% block text_content16 %}
     <p>Дегенмен, егер сіз қараңғы сиқырдың жанкүйері болмасаңыз, онда сіз <code>for</code> циклінің көмегімен бірдей әсерге қол жеткізе аласыз.</p>
@@ -160,12 +160,13 @@
 
 {% block text_content24 %}
     <p>Нәтижесінде <code>A[2:4]</code> кесіндісінің екі элементінің орнына үш элементтен тұратын жаңа тізім енгізілген тізім пайда болады. Енді тізім <code>[1, 2, 7, 8, 9, 5]</code> тең.</p>
+ <p>Нәтижесінде тізім шығады <code>[40, 2, 30, 4, 20, 6, 10]</code>. Мұнда <code>A[::-2] - 10</code>, <code>20</code>, <code>30</code> мәндері тағайындалған <code>A[-1]</code>, <code>A[-3]</code>, <code>A[-5]</code>, <code>A[-7]</code> элементтерінің тізімі, тиісінше 40.</p>
+    <p>Үздіксіз кесіндіге (яғни, 1-ден басқа <code>k</code> қадамы бар кесіндіге) жаңа мән тағайындалса, онда ескі және жаңа кесіндідегі элементтердің саны бірдей болуы керек, әйтпесе <code>ValueError</code> орын алады.</p>
+    <p><code>A[i]</code> кесінді емес, тізім элементі екенін ескеріңіз!</p>
 {% endblock %}
 
 {% block text_content25 %}
-    <p>Нәтижесінде тізім шығады <code>[40, 2, 30, 4, 20, 6, 10]</code>. Мұнда <code>A[::-2] - 10</code>, <code>20</code>, <code>30</code> мәндері тағайындалған <code>A[-1]</code>, <code>A[-3]</code>, <code>A[-5]</code>, <code>A[-7]</code> элементтерінің тізімі, тиісінше 40.</p>
-    <p>Үздіксіз кесіндіге (яғни, 1-ден басқа <code>k</code> қадамы бар кесіндіге) жаңа мән тағайындалса, онда ескі және жаңа кесіндідегі элементтердің саны бірдей болуы керек, әйтпесе <code>ValueError</code> орын алады.</p>
-    <p><code>A[i]</code> кесінді емес, тізім элементі екенін ескеріңіз!</p>
+
     <h1 id="h5">Тізімдермен операциялар</h1>
     <p>Тізімдермен көптеген әртүрлі операцияларды оңай орындауға болады.</p>
     <table>
@@ -240,11 +241,9 @@
     <iframe height="450px" src="https://onecompiler.com/embed/python/42hjutswb?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
 {% endblock %}
 
-{% block trinket_url12 %}
-    <iframe height="450px" src="https://onecompiler.com/embed/python/42hjuusku?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
-{% endblock %}
 
-{% block trinket_url13 %}
+
+{% block trinket_url12 %}
     <iframe height="450px" src="https://onecompiler.com/embed/python/42hjuw5kg?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
 {% endblock %}
 
@@ -252,7 +251,7 @@
     <iframe height="450px" src="https://onecompiler.com/embed/python/42hjuusku?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
 {% endblock %}
 
-{% block trinket_url16 %}
+{% block trinket_url18 %}
     <iframe height="450px" src="https://onecompiler.com/embed/python/42hjuw5kg?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
 {% endblock %}
 
@@ -260,9 +259,7 @@
     <iframe height="450px" src="https://onecompiler.com/embed/python/42hjuyddg?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
 {% endblock %}
 
-{% block trinket_url18 %}
-    <iframe height="450px" src="https://onecompiler.com/embed/python/?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
-{% endblock %}
+
 
 {% block trinket_url19 %}
     <iframe height="450px" src="https://onecompiler.com/embed/python/42hjuzyxm?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
@@ -287,3 +284,94 @@
 {% block trinket_url24 %}
     <iframe height="450px" src="https://onecompiler.com/embed/python/42hjvg39f?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
 {% endblock %}
+
+{% block video1 %}
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/list sabak/minilist-sabak-1.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video2 %}
+<br><br><br><br><br><br><br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/list sabak/minilist-sabak-2.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video3 %}
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/list sabak/minilist-sabak-3.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video5 %}
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/list sabak/minilist-sabak-matem.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video7 %}
+<br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/list sabak/minilist-sabak-teru.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video8 %}
+<br><br><br><br><br><br><br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/list sabak/minilist-sabak-digits.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video9 %}
+<br><br><br><br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/list sabak/minilist-sabak-split-1.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video10 %}
+<br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/list sabak/minilist-sabak-split-2.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video11 %}
+<br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/list sabak/minilist-sabak-generator.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video12 %}
+<br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/list sabak/minilist-sabak-(.).mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+
+{% block video14 %}
+<br><br><br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/list sabak/minilist-sabak-join.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video23 %}
+    <video id="player" controls>
+      <source src="{% static 'video/list sabak/minilist-sabak-kesindi.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video25 %}
+    <video id="player" controls>
+      <source src="{% static 'video/list sabak/minilist-sabak-songisi.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+

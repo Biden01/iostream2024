@@ -1,10 +1,18 @@
 {% extends 'task/task3/task3.html' %}
-
+{% load static %}
 {% block text_content1 %}
-    <h1>8. «Уақыт айырмашылығы» тапсырмасы</h1>
-    <p>Шарт</p>
+    <h1>8. «Уақыт айырмашылығы» </h1>
+
     <p>Бір күнге жататын екі уақыт нүктесінің мәндері берілген: уақыттың әрбір нүктесі үшін сағаттар, минуттар және секундтар. Уақыттың екінші сәті біріншіден ерте келмегені белгілі. Уақыт бойынша екі нүктенің арасында қанша секунд өткенін анықтаңыз.</p>
     <p>Бағдарлама кіріс ретінде үш бүтін санды алады: уақыттың бірінші сәтін көрсететін сағаттар, минуттар, секундтар және уақыттың екінші сәтін көрсететін үш бүтін сан.</p>
     <p>Осы уақыттардың арасындағы секундтар санын басып шығарыңыз.</p>
     <p>Барлық тапсырмаларда input() арқылы енгізуді оқыңыз және print() арқылы жауапты шығарыңыз.</p>
 <iframe height="450px" src="https://onecompiler.com/embed/python/42hnesw22?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>{% endblock %}
+{% block video1 %}
+<br>
+<br>
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/esepteuler-esep/miniesepteuler-esep-8.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}

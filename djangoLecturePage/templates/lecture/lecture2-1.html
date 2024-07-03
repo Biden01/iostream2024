@@ -66,37 +66,34 @@
     <h1 id="h2">2. Кірістірілген шартты операторлар</h1>
     <p>Шартты инструкциялардың ішінде кез келген Python тіліндегі инструкцияды, соның ішінде шартты инструкцияды пайдалануға болады. Біз кірістірілген тармақты аламыз - бір айыру жолынан кейін бағдарламаны орындау кезінде басқа айыру жолы пайда болады. Бұл
     жағдайда кірістірілген блоктар үлкенірек шегініс өлшеміне ие (мысалы, 8 бос орын). Мұны нөлдік емес х және у сандары берілген, (х,у) нүктесі координаталық жазықтықтың қай ширегінде орналасқанын анықтайтын программаның мысалы арқылы көрсетейік:</p>
+<p>Бұл мысалда біз түсініктемелерді(комментариилерді) қолдандық - интерпретатор елемейтін мәтін. Python тіліндегі түсініктемелер(комментариилер) - <code>#</code> таңбасы және жолдың соңына дейін осы таңбадан кейінгі барлық мәтін.</p>
+
 {% endblock %}
 
 {% block text_content5 %}
-    <p>Бұл мысалда біз түсініктемелерді(комментариилерді) қолдандық - интерпретатор елемейтін мәтін. Python тіліндегі түсініктемелер(комментариилер) - <code>#</code> таңбасы және жолдың соңына дейін осы таңбадан кейінгі барлық мәтін.</p>
-{% endblock %}
+    {% endblock %}
 
 {% block text_content6 %}
+
     <h1 id="h3">3. Салыстыру операторлары</h1>
     <p>Әдетте, келесі салыстыру операторларының бірінің нәтижесі тексерілетін шарт ретінде пайдаланылады:</p>
-    <p><code> < </code></p>
-    <p>Кіші – бірінші операнд екіншіден аз болса, шарт дұрыс болады.</p>
-    <p><code> > </code></p>
-    <p>Үлкен – шарт бірінші операнд екіншісінен үлкен болса, дұрыс болады.</p>
-    <p><code><=</code></p>
-    <p>Аз немесе тең.</p>
-    <p><code> >= </code></p>
-    <p>Үлкен немесе тең. </p>
-    <p><code> == </code></p>
-    <p>Теңдік. Шарт дұрыс, егер екі операнд тең болса.</p>
-    <p><code> != </code></p>
-    <p>Тең емес. Шарт дұрыс, егер екі операнд тең емес болса.</p>
-    <br><br>
+    <p><code> < </code>Кіші – бірінші операнд екіншіден аз болса, шарт дұрыс болады.</p>
+    <p><code> > </code>Үлкен – шарт бірінші операнд екіншісінен үлкен болса, дұрыс болады.</p>
+    <p><code><=</code>Аз немесе тең.</p>
+    <p><code> >= </code>Үлкен немесе тең. </p>
+    <p><code> == </code>Теңдік. Шарт дұрыс, егер екі операнд тең болса.</p>
+    <p><code> != </code>Тең емес. Шарт дұрыс, егер екі операнд тең емес болса.</p>
+    <br>
     <p>Мысалы, <code>(x * x < 1000)</code> шарты «<code>x * x</code> мәні 1000-нан аз» дегенді білдіреді, </p>
     <p>ал <code>(2 * x != y)</code> шарты «x-тің екі есе мәні <code>y</code> мәніне тең емес» дегенді білдіреді.</p>
     <p>Python тіліндегі салыстыру операторларын тізбектерге біріктіруге болады (басқа бағдарламалау тілдерінің көпшілігінен айырмашылығы, бұл үшін логикалық қосылғыштарды пайдалану қажет), мысалы, <code>a == b == c</code> немесе <code>1 <= x <= 10</code>.</p>
+<h1 id="h4">4. bool деректер типі</h1>
+    <p>Салыстыру операторлары арнайы логикалық <code>bool</code> типтегі мәндерін қайтарады. Логикалық мәндер екі мәннің бірін қабылдай алады: <code>True</code> немесе <code>False</code>. Логикалық ақиқат мәнін <code>int</code> мәніне түрлендіру 1-ге, ал <code>False</code> мәніне түрлендіру 0-ге әкеледі. Кері түрлендіру 0 санын <code>False</code> мәніне және кез келген нөлдік емес санды <code>True</code> мәніне түрлендіреді. <code>str</code> параметрін <code>bool</code> түріне түрлендіру кезінде бос жол <code>False</code> мәніне және кез келген бос емес жол <code>True</code> мәніне түрлендіріледі.</p>
+
 {% endblock %}
 
 {% block text_content7 %}
-    <h1 id="h4">4. bool деректер типі</h1>
-    <p>Салыстыру операторлары арнайы логикалық <code>bool</code> типтегі мәндерін қайтарады. Логикалық мәндер екі мәннің бірін қабылдай алады: <code>True</code> немесе <code>False</code>. Логикалық ақиқат мәнін <code>int</code> мәніне түрлендіру 1-ге, ал <code>False</code> мәніне түрлендіру 0-ге әкеледі. Кері түрлендіру 0 санын <code>False</code> мәніне және кез келген нөлдік емес санды <code>True</code> мәніне түрлендіреді. <code>str</code> параметрін <code>bool</code> түріне түрлендіру кезінде бос жол <code>False</code> мәніне және кез келген бос емес жол <code>True</code> мәніне түрлендіріледі.</p>
-{% endblock %}
+    {% endblock %}
 
 {% block text_content8 %}
     <h1 id="h5">4.1. Логикалық операторлар</h1>
@@ -143,4 +140,70 @@
 
 {% block trinket_url10 %}
     <iframe height="450px" src="https://onecompiler.com/embed/python/42hjr2erx?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>
+{% endblock %}
+
+{% block video1 %}
+<br>
+<br>
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/if-else/mini4.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video2 %}
+    <video id="player" controls>
+      <source src="{% static 'video/if-else/mini5.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+<br>
+<video id="player" controls>
+      <source src="{% static 'video/if-else/miniif_modul.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video3 %}
+
+{% endblock %}
+
+{% block video4 %}
+<br><br><br><br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/if-else/miniif_structura.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+
+{% endblock %}
+{% block video5 %}
+
+{% endblock %}
+
+{% block video6 %}
+    <video id="player" controls>
+      <source src="{% static 'video/if-else/miniif_bool.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+<br>
+<video id="player" controls>
+      <source src="{% static 'video/if-else/miniif_jupsan.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}
+
+{% block video7 %}
+
+{% endblock %}
+
+{% block video8 %}
+<br><br>
+    <video id="player" controls>
+      <source src="{% static 'video/if-else/miniif_misal.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/if-else/miniif_and_or.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+
+{% endblock %}
+
+{% block video10 %}
+    <video id="player" controls>
+      <source src="{% static 'video/if-else/miniif_0.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
 {% endblock %}

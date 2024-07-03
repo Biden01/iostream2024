@@ -1,8 +1,16 @@
 {% extends 'task/task3/task3.html' %}
-
+{% load static %}
 {% block text_content1 %}
-    <h1>7. «Сатып алу құны» тапсырмасы</h1>
-    <p>Шарт</p>
-    <p>Асханадағы бәліш бір рубль мен б тиын тұрады. n пирогқа қанша рубль мен тиын төлеу керек екенін анықтаңыз. Бағдарлама кіріс ретінде үш нөмірді алады: a, b, n және екі нөмірді шығаруы керек: сатып алу құны рубльмен және копеекпен.</p>
+    <h1>7. «Сатып алу құны» </h1>
+
+    <p>Асханадағы бәліш а теңге мен b тиын тұрады. n бәліш қанша теңге мен тиын төлеу керек екенін анықтаңыз. Бағдарлама кіріс ретінде үш нөмірді алады: a, b, n және екі нөмірді шығаруы керек: сатып алу құны теңге және тиында.</p>
     <p>Барлық тапсырмаларда input() арқылы енгізуді оқыңыз және print() арқылы жауапты шығарыңыз.</p>
 <iframe height="450px" src="https://onecompiler.com/embed/python/42hnesw22?hideLanguageSelection=true&hideNew=true&hideNewFileOption=true&hideTitle=true" width="100%"></iframe>{% endblock %}
+{% block video1 %}
+<br>
+<br>
+<br>
+    <video id="player" controls>
+      <source src="{% static 'video/esepteuler-esep/miniesepteuler-esep-7.mp4' %}" class="video-link" type="video/mp4" />
+    </video>
+{% endblock %}

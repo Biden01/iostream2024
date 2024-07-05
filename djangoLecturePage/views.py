@@ -3,13 +3,16 @@ from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render, redirect
 from django.views import View
 
+from djangoUsers.models import CustomUser
+
 redirect_page = 'main'
 
 
 class LecturePageView(View):
     def get(self, request: HttpRequest) -> HttpResponse:
+        user = CustomUser.objects.get(request.user)
         context = {
-            'user': request.user,
+            'user': user,
         }
         return render(request=request, template_name="lecture/lecture.html", context=context)
 

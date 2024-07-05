@@ -144,3 +144,9 @@ button {
     border-color: #0275d8;
     margin: 20px 0;
 }
+
+.block_sub {
+    height: 480px;
+    width: 655px;
+    background: gray;
+}

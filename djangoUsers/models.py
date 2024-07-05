@@ -23,4 +23,3 @@ class CustomUser(AbstractUser):
         error_messages='Телефон нөмірі қате енгізілді.'
     )
     subscribe = models.BooleanField(default=False)
-    subscribe_date = models.DateField(null=True, blank=True, default='0')
